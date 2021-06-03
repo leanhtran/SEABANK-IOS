@@ -1,0 +1,856 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		788040B126686BEC004B0066 /* HomeViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788040AF26686BEC004B0066 /* HomeViewViewController.swift */; };
+		788040B226686BEC004B0066 /* HomeViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788040AF26686BEC004B0066 /* HomeViewViewController.swift */; };
+		788040B326686BEC004B0066 /* HomeViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 788040B026686BEC004B0066 /* HomeViewViewController.xib */; };
+		788040B426686BEC004B0066 /* HomeViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 788040B026686BEC004B0066 /* HomeViewViewController.xib */; };
+		79E106692667B4D80050FCB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E106682667B4D80050FCB8 /* AppDelegate.swift */; };
+		79E106722667B4D90050FCB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79E106712667B4D90050FCB8 /* Assets.xcassets */; };
+		79E106752667B4D90050FCB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79E106732667B4D90050FCB8 /* LaunchScreen.storyboard */; };
+		79E106982667B8B80050FCB8 /* SBGoldSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E106942667B8A80050FCB8 /* SBGoldSDK.xcframework */; };
+		79E106992667B8B80050FCB8 /* SBGoldSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 79E106942667B8A80050FCB8 /* SBGoldSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		79E106C72667BA0F0050FCB8 /* SBGoldSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E106C62667BA0F0050FCB8 /* SBGoldSDK.swift */; };
+		79E106CC2667BC9B0050FCB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E106682667B4D80050FCB8 /* AppDelegate.swift */; };
+		79E106D12667BC9B0050FCB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79E106732667B4D90050FCB8 /* LaunchScreen.storyboard */; };
+		79E106D22667BC9B0050FCB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79E106712667B4D90050FCB8 /* Assets.xcassets */; };
+		79E106FD2667BCEB0050FCB8 /* SBSGoldVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E106E52667BCEB0050FCB8 /* SBSGoldVC.swift */; };
+		79E106FE2667BCEB0050FCB8 /* SBSGoldVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E106E52667BCEB0050FCB8 /* SBSGoldVC.swift */; };
+		79E106FF2667BCEB0050FCB8 /* SBSGoldItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E106E72667BCEB0050FCB8 /* SBSGoldItemCell.swift */; };
+		79E107002667BCEB0050FCB8 /* SBSGoldItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E106E72667BCEB0050FCB8 /* SBSGoldItemCell.swift */; };
+		79E107022667BCEB0050FCB8 /* SBSViewWithXib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E106EB2667BCEB0050FCB8 /* SBSViewWithXib.swift */; };
+		79E107032667BCEB0050FCB8 /* SBSViewWithXib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E106EB2667BCEB0050FCB8 /* SBSViewWithXib.swift */; };
+		79E107042667BCEB0050FCB8 /* SBSCollectionView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E106ED2667BCEB0050FCB8 /* SBSCollectionView+Ext.swift */; };
+		79E107052667BCEB0050FCB8 /* SBSCollectionView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E106ED2667BCEB0050FCB8 /* SBSCollectionView+Ext.swift */; };
+		79E107062667BCEB0050FCB8 /* SBSNSObject+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E106EE2667BCEB0050FCB8 /* SBSNSObject+Ext.swift */; };
+		79E107072667BCEB0050FCB8 /* SBSNSObject+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E106EE2667BCEB0050FCB8 /* SBSNSObject+Ext.swift */; };
+		79E107082667BCEB0050FCB8 /* SBSUIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E106EF2667BCEB0050FCB8 /* SBSUIView+Ext.swift */; };
+		79E107092667BCEB0050FCB8 /* SBSUIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E106EF2667BCEB0050FCB8 /* SBSUIView+Ext.swift */; };
+		79E1070A2667BCEB0050FCB8 /* SBSLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E106F12667BCEB0050FCB8 /* SBSLog.swift */; };
+		79E1070B2667BCEB0050FCB8 /* SBSLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E106F12667BCEB0050FCB8 /* SBSLog.swift */; };
+		79E1070C2667BCEB0050FCB8 /* SBSDimentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E106F22667BCEB0050FCB8 /* SBSDimentions.swift */; };
+		79E1070D2667BCEB0050FCB8 /* SBSDimentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E106F22667BCEB0050FCB8 /* SBSDimentions.swift */; };
+		79E1070E2667BCEB0050FCB8 /* SBSUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E106F32667BCEB0050FCB8 /* SBSUtils.swift */; };
+		79E1070F2667BCEB0050FCB8 /* SBSUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E106F32667BCEB0050FCB8 /* SBSUtils.swift */; };
+		79E107112667BCEB0050FCB8 /* SBSNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E106F72667BCEB0050FCB8 /* SBSNavigationView.swift */; };
+		79E107122667BCEB0050FCB8 /* SBSNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E106F72667BCEB0050FCB8 /* SBSNavigationView.swift */; };
+		79E107132667BCEB0050FCB8 /* SBSGoldBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E106F92667BCEB0050FCB8 /* SBSGoldBaseVC.swift */; };
+		79E107142667BCEB0050FCB8 /* SBSGoldBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E106F92667BCEB0050FCB8 /* SBSGoldBaseVC.swift */; };
+		79E107192667BE5D0050FCB8 /* SBSViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E107182667BE5D0050FCB8 /* SBSViewController+Ext.swift */; };
+		79E1071A2667BE5D0050FCB8 /* SBSViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E107182667BE5D0050FCB8 /* SBSViewController+Ext.swift */; };
+		79E1072E2667C7520050FCB8 /* SBSGoldVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79E106E42667BCEB0050FCB8 /* SBSGoldVC.xib */; };
+		79E107342667C7620050FCB8 /* SBSNavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79E106F62667BCEB0050FCB8 /* SBSNavigationView.xib */; };
+		79E107382667C8240050FCB8 /* SBSBundle+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E107372667C8240050FCB8 /* SBSBundle+Ext.swift */; };
+		79E107392667C8240050FCB8 /* SBSBundle+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E107372667C8240050FCB8 /* SBSBundle+Ext.swift */; };
+		79E107552667CCBE0050FCB8 /* SBGoldSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 79E107242667C6680050FCB8 /* SBGoldSDKResources.bundle */; };
+		79E107702667D1B40050FCB8 /* SBGoldSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 79E107242667C6680050FCB8 /* SBGoldSDKResources.bundle */; };
+		79E1077B2667D7110050FCB8 /* SBSGoldItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79E106E82667BCEB0050FCB8 /* SBSGoldItemCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		79E1072C2667C6E70050FCB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79E1065D2667B4D80050FCB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79E107232667C6680050FCB8;
+			remoteInfo = SBGoldSDKResources;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		788040BB26686E02004B0066 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E106892667B6810050FCB8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E1069A2667B8B80050FCB8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				79E106992667B8B80050FCB8 /* SBGoldSDK.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		788040AF26686BEC004B0066 /* HomeViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewViewController.swift; sourceTree = "<group>"; };
+		788040B026686BEC004B0066 /* HomeViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewViewController.xib; sourceTree = "<group>"; };
+		788040B526686C8C004B0066 /* SDKTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SDKTest-Info.plist"; sourceTree = "<group>"; };
+		79E106652667B4D80050FCB8 /* SBGoldSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SBGoldSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79E106682667B4D80050FCB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		79E106712667B4D90050FCB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79E106742667B4D90050FCB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		79E106762667B4D90050FCB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79E1068B2667B6810050FCB8 /* libSBGoldSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSBGoldSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		79E106942667B8A80050FCB8 /* SBGoldSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SBGoldSDK.xcframework; path = build/SBGoldSDK.xcframework; sourceTree = SOURCE_ROOT; };
+		79E106C62667BA0F0050FCB8 /* SBGoldSDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBGoldSDK.swift; sourceTree = "<group>"; };
+		79E106D92667BC9B0050FCB8 /* SDKTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDKTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79E106E42667BCEB0050FCB8 /* SBSGoldVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBSGoldVC.xib; sourceTree = "<group>"; };
+		79E106E52667BCEB0050FCB8 /* SBSGoldVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBSGoldVC.swift; sourceTree = "<group>"; };
+		79E106E72667BCEB0050FCB8 /* SBSGoldItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBSGoldItemCell.swift; sourceTree = "<group>"; };
+		79E106E82667BCEB0050FCB8 /* SBSGoldItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBSGoldItemCell.xib; sourceTree = "<group>"; };
+		79E106EB2667BCEB0050FCB8 /* SBSViewWithXib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBSViewWithXib.swift; sourceTree = "<group>"; };
+		79E106ED2667BCEB0050FCB8 /* SBSCollectionView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SBSCollectionView+Ext.swift"; sourceTree = "<group>"; };
+		79E106EE2667BCEB0050FCB8 /* SBSNSObject+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SBSNSObject+Ext.swift"; sourceTree = "<group>"; };
+		79E106EF2667BCEB0050FCB8 /* SBSUIView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SBSUIView+Ext.swift"; sourceTree = "<group>"; };
+		79E106F12667BCEB0050FCB8 /* SBSLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBSLog.swift; sourceTree = "<group>"; };
+		79E106F22667BCEB0050FCB8 /* SBSDimentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBSDimentions.swift; sourceTree = "<group>"; };
+		79E106F32667BCEB0050FCB8 /* SBSUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBSUtils.swift; sourceTree = "<group>"; };
+		79E106F62667BCEB0050FCB8 /* SBSNavigationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBSNavigationView.xib; sourceTree = "<group>"; };
+		79E106F72667BCEB0050FCB8 /* SBSNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBSNavigationView.swift; sourceTree = "<group>"; };
+		79E106F92667BCEB0050FCB8 /* SBSGoldBaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBSGoldBaseVC.swift; sourceTree = "<group>"; };
+		79E107182667BE5D0050FCB8 /* SBSViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SBSViewController+Ext.swift"; sourceTree = "<group>"; };
+		79E107242667C6680050FCB8 /* SBGoldSDKResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SBGoldSDKResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		79E107262667C6680050FCB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79E107372667C8240050FCB8 /* SBSBundle+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SBSBundle+Ext.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79E106622667B4D80050FCB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E106982667B8B80050FCB8 /* SBGoldSDK.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E106882667B6810050FCB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E106CE2667BC9B0050FCB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E107212667C6680050FCB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79E1065C2667B4D80050FCB8 = {
+			isa = PBXGroup;
+			children = (
+				79E106672667B4D80050FCB8 /* SBGoldSDKDemo */,
+				79E1068C2667B6810050FCB8 /* SBGoldSDK */,
+				79E107252667C6680050FCB8 /* SBGoldSDKResources */,
+				79E106662667B4D80050FCB8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		79E106662667B4D80050FCB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79E106652667B4D80050FCB8 /* SBGoldSDKDemo.app */,
+				79E1068B2667B6810050FCB8 /* libSBGoldSDK.a */,
+				79E106D92667BC9B0050FCB8 /* SDKTest.app */,
+				79E107242667C6680050FCB8 /* SBGoldSDKResources.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79E106672667B4D80050FCB8 /* SBGoldSDKDemo */ = {
+			isa = PBXGroup;
+			children = (
+				79E106942667B8A80050FCB8 /* SBGoldSDK.xcframework */,
+				788040AF26686BEC004B0066 /* HomeViewViewController.swift */,
+				788040B026686BEC004B0066 /* HomeViewViewController.xib */,
+				79E106682667B4D80050FCB8 /* AppDelegate.swift */,
+				79E106712667B4D90050FCB8 /* Assets.xcassets */,
+				79E106732667B4D90050FCB8 /* LaunchScreen.storyboard */,
+				79E106762667B4D90050FCB8 /* Info.plist */,
+				788040B526686C8C004B0066 /* SDKTest-Info.plist */,
+			);
+			path = SBGoldSDKDemo;
+			sourceTree = "<group>";
+		};
+		79E1068C2667B6810050FCB8 /* SBGoldSDK */ = {
+			isa = PBXGroup;
+			children = (
+				79E106E12667BCEB0050FCB8 /* Source */,
+				79E106C62667BA0F0050FCB8 /* SBGoldSDK.swift */,
+			);
+			path = SBGoldSDK;
+			sourceTree = "<group>";
+		};
+		79E106E12667BCEB0050FCB8 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				79E106E22667BCEB0050FCB8 /* UI */,
+				79E106E92667BCEB0050FCB8 /* Commons */,
+				79E106EC2667BCEB0050FCB8 /* Extensions */,
+				79E106F02667BCEB0050FCB8 /* Uitls */,
+				79E106F42667BCEB0050FCB8 /* Views */,
+				79E106F82667BCEB0050FCB8 /* Base */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		79E106E22667BCEB0050FCB8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				79E106E32667BCEB0050FCB8 /* SBSGold */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		79E106E32667BCEB0050FCB8 /* SBSGold */ = {
+			isa = PBXGroup;
+			children = (
+				79E106E42667BCEB0050FCB8 /* SBSGoldVC.xib */,
+				79E106E52667BCEB0050FCB8 /* SBSGoldVC.swift */,
+				79E106E62667BCEB0050FCB8 /* Cell */,
+			);
+			path = SBSGold;
+			sourceTree = "<group>";
+		};
+		79E106E62667BCEB0050FCB8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				79E106E72667BCEB0050FCB8 /* SBSGoldItemCell.swift */,
+				79E106E82667BCEB0050FCB8 /* SBSGoldItemCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		79E106E92667BCEB0050FCB8 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				79E106EA2667BCEB0050FCB8 /* View */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		79E106EA2667BCEB0050FCB8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				79E106EB2667BCEB0050FCB8 /* SBSViewWithXib.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		79E106EC2667BCEB0050FCB8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				79E106ED2667BCEB0050FCB8 /* SBSCollectionView+Ext.swift */,
+				79E106EE2667BCEB0050FCB8 /* SBSNSObject+Ext.swift */,
+				79E106EF2667BCEB0050FCB8 /* SBSUIView+Ext.swift */,
+				79E107182667BE5D0050FCB8 /* SBSViewController+Ext.swift */,
+				79E107372667C8240050FCB8 /* SBSBundle+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		79E106F02667BCEB0050FCB8 /* Uitls */ = {
+			isa = PBXGroup;
+			children = (
+				79E106F12667BCEB0050FCB8 /* SBSLog.swift */,
+				79E106F22667BCEB0050FCB8 /* SBSDimentions.swift */,
+				79E106F32667BCEB0050FCB8 /* SBSUtils.swift */,
+			);
+			path = Uitls;
+			sourceTree = "<group>";
+		};
+		79E106F42667BCEB0050FCB8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				79E106F52667BCEB0050FCB8 /* Navigation */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		79E106F52667BCEB0050FCB8 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				79E106F62667BCEB0050FCB8 /* SBSNavigationView.xib */,
+				79E106F72667BCEB0050FCB8 /* SBSNavigationView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		79E106F82667BCEB0050FCB8 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				79E106F92667BCEB0050FCB8 /* SBSGoldBaseVC.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		79E107252667C6680050FCB8 /* SBGoldSDKResources */ = {
+			isa = PBXGroup;
+			children = (
+				79E107262667C6680050FCB8 /* Info.plist */,
+			);
+			path = SBGoldSDKResources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79E106642667B4D80050FCB8 /* SBGoldSDKDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79E106792667B4D90050FCB8 /* Build configuration list for PBXNativeTarget "SBGoldSDKDemo" */;
+			buildPhases = (
+				79E106612667B4D80050FCB8 /* Sources */,
+				79E106622667B4D80050FCB8 /* Frameworks */,
+				79E106632667B4D80050FCB8 /* Resources */,
+				79E1069A2667B8B80050FCB8 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SBGoldSDKDemo;
+			productName = SBGoldSDKDemo;
+			productReference = 79E106652667B4D80050FCB8 /* SBGoldSDKDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		79E1068A2667B6810050FCB8 /* SBGoldSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79E1068F2667B6810050FCB8 /* Build configuration list for PBXNativeTarget "SBGoldSDK" */;
+			buildPhases = (
+				79E106872667B6810050FCB8 /* Sources */,
+				79E106882667B6810050FCB8 /* Frameworks */,
+				79E106892667B6810050FCB8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79E1072D2667C6E70050FCB8 /* PBXTargetDependency */,
+			);
+			name = SBGoldSDK;
+			productName = SBGoldSDK;
+			productReference = 79E1068B2667B6810050FCB8 /* libSBGoldSDK.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		79E106CA2667BC9B0050FCB8 /* SDKTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79E106D62667BC9B0050FCB8 /* Build configuration list for PBXNativeTarget "SDKTest" */;
+			buildPhases = (
+				79E106CB2667BC9B0050FCB8 /* Sources */,
+				79E106CE2667BC9B0050FCB8 /* Frameworks */,
+				79E106D02667BC9B0050FCB8 /* Resources */,
+				788040BB26686E02004B0066 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SDKTest;
+			productName = SBGoldSDKDemo;
+			productReference = 79E106D92667BC9B0050FCB8 /* SDKTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		79E107232667C6680050FCB8 /* SBGoldSDKResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79E107272667C6680050FCB8 /* Build configuration list for PBXNativeTarget "SBGoldSDKResources" */;
+			buildPhases = (
+				79E107202667C6680050FCB8 /* Sources */,
+				79E107212667C6680050FCB8 /* Frameworks */,
+				79E107222667C6680050FCB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SBGoldSDKResources;
+			productName = SBGoldSDKResources;
+			productReference = 79E107242667C6680050FCB8 /* SBGoldSDKResources.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79E1065D2667B4D80050FCB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					79E106642667B4D80050FCB8 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					79E1068A2667B6810050FCB8 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					79E107232667C6680050FCB8 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 79E106602667B4D80050FCB8 /* Build configuration list for PBXProject "SBGoldSDKDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 79E1065C2667B4D80050FCB8;
+			productRefGroup = 79E106662667B4D80050FCB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79E106642667B4D80050FCB8 /* SBGoldSDKDemo */,
+				79E106CA2667BC9B0050FCB8 /* SDKTest */,
+				79E1068A2667B6810050FCB8 /* SBGoldSDK */,
+				79E107232667C6680050FCB8 /* SBGoldSDKResources */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79E106632667B4D80050FCB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E107552667CCBE0050FCB8 /* SBGoldSDKResources.bundle in Resources */,
+				79E106752667B4D90050FCB8 /* LaunchScreen.storyboard in Resources */,
+				788040B326686BEC004B0066 /* HomeViewViewController.xib in Resources */,
+				79E106722667B4D90050FCB8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E106D02667BC9B0050FCB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E107702667D1B40050FCB8 /* SBGoldSDKResources.bundle in Resources */,
+				79E106D12667BC9B0050FCB8 /* LaunchScreen.storyboard in Resources */,
+				788040B426686BEC004B0066 /* HomeViewViewController.xib in Resources */,
+				79E106D22667BC9B0050FCB8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E107222667C6680050FCB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E1077B2667D7110050FCB8 /* SBSGoldItemCell.xib in Resources */,
+				79E107342667C7620050FCB8 /* SBSNavigationView.xib in Resources */,
+				79E1072E2667C7520050FCB8 /* SBSGoldVC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79E106612667B4D80050FCB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				788040B126686BEC004B0066 /* HomeViewViewController.swift in Sources */,
+				79E106692667B4D80050FCB8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E106872667B6810050FCB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E106C72667BA0F0050FCB8 /* SBGoldSDK.swift in Sources */,
+				79E1071A2667BE5D0050FCB8 /* SBSViewController+Ext.swift in Sources */,
+				79E107052667BCEB0050FCB8 /* SBSCollectionView+Ext.swift in Sources */,
+				79E1070B2667BCEB0050FCB8 /* SBSLog.swift in Sources */,
+				79E107002667BCEB0050FCB8 /* SBSGoldItemCell.swift in Sources */,
+				79E107092667BCEB0050FCB8 /* SBSUIView+Ext.swift in Sources */,
+				79E107142667BCEB0050FCB8 /* SBSGoldBaseVC.swift in Sources */,
+				79E107122667BCEB0050FCB8 /* SBSNavigationView.swift in Sources */,
+				79E107032667BCEB0050FCB8 /* SBSViewWithXib.swift in Sources */,
+				79E1070F2667BCEB0050FCB8 /* SBSUtils.swift in Sources */,
+				79E107072667BCEB0050FCB8 /* SBSNSObject+Ext.swift in Sources */,
+				79E1070D2667BCEB0050FCB8 /* SBSDimentions.swift in Sources */,
+				79E107392667C8240050FCB8 /* SBSBundle+Ext.swift in Sources */,
+				79E106FE2667BCEB0050FCB8 /* SBSGoldVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E106CB2667BC9B0050FCB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E106CC2667BC9B0050FCB8 /* AppDelegate.swift in Sources */,
+				79E106FD2667BCEB0050FCB8 /* SBSGoldVC.swift in Sources */,
+				79E107022667BCEB0050FCB8 /* SBSViewWithXib.swift in Sources */,
+				79E107082667BCEB0050FCB8 /* SBSUIView+Ext.swift in Sources */,
+				79E107192667BE5D0050FCB8 /* SBSViewController+Ext.swift in Sources */,
+				79E1070C2667BCEB0050FCB8 /* SBSDimentions.swift in Sources */,
+				79E1070A2667BCEB0050FCB8 /* SBSLog.swift in Sources */,
+				79E107062667BCEB0050FCB8 /* SBSNSObject+Ext.swift in Sources */,
+				79E107042667BCEB0050FCB8 /* SBSCollectionView+Ext.swift in Sources */,
+				79E107112667BCEB0050FCB8 /* SBSNavigationView.swift in Sources */,
+				79E107132667BCEB0050FCB8 /* SBSGoldBaseVC.swift in Sources */,
+				79E107382667C8240050FCB8 /* SBSBundle+Ext.swift in Sources */,
+				79E106FF2667BCEB0050FCB8 /* SBSGoldItemCell.swift in Sources */,
+				788040B226686BEC004B0066 /* HomeViewViewController.swift in Sources */,
+				79E1070E2667BCEB0050FCB8 /* SBSUtils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E107202667C6680050FCB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		79E1072D2667C6E70050FCB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79E107232667C6680050FCB8 /* SBGoldSDKResources */;
+			targetProxy = 79E1072C2667C6E70050FCB8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		79E106732667B4D90050FCB8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79E106742667B4D90050FCB8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		79E106772667B4D90050FCB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		79E106782667B4D90050FCB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79E1067A2667B4D90050FCB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SBGoldSDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sbs.SBGoldSDKDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		79E1067B2667B4D90050FCB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SBGoldSDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sbs.SBGoldSDKDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		79E106902667B6810050FCB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		79E106912667B6810050FCB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		79E106D72667BC9B0050FCB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "SDKTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sbs.SBGoldSDKDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		79E106D82667BC9B0050FCB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "SDKTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sbs.SBGoldSDKDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		79E107282667C6680050FCB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SBGoldSDKResources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sbs.SBGoldSDKResources;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		79E107292667C6680050FCB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SBGoldSDKResources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sbs.SBGoldSDKResources;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79E106602667B4D80050FCB8 /* Build configuration list for PBXProject "SBGoldSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E106772667B4D90050FCB8 /* Debug */,
+				79E106782667B4D90050FCB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79E106792667B4D90050FCB8 /* Build configuration list for PBXNativeTarget "SBGoldSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E1067A2667B4D90050FCB8 /* Debug */,
+				79E1067B2667B4D90050FCB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79E1068F2667B6810050FCB8 /* Build configuration list for PBXNativeTarget "SBGoldSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E106902667B6810050FCB8 /* Debug */,
+				79E106912667B6810050FCB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79E106D62667BC9B0050FCB8 /* Build configuration list for PBXNativeTarget "SDKTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E106D72667BC9B0050FCB8 /* Debug */,
+				79E106D82667BC9B0050FCB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79E107272667C6680050FCB8 /* Build configuration list for PBXNativeTarget "SBGoldSDKResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E107282667C6680050FCB8 /* Debug */,
+				79E107292667C6680050FCB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79E1065D2667B4D80050FCB8 /* Project object */;
+}
