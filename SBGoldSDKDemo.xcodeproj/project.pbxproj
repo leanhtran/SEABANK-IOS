@@ -11,6 +11,8 @@
 		788040B226686BEC004B0066 /* HomeViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788040AF26686BEC004B0066 /* HomeViewViewController.swift */; };
 		788040B326686BEC004B0066 /* HomeViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 788040B026686BEC004B0066 /* HomeViewViewController.xib */; };
 		788040B426686BEC004B0066 /* HomeViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 788040B026686BEC004B0066 /* HomeViewViewController.xib */; };
+		788043422668BE75004B0066 /* SBSNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788043412668BE75004B0066 /* SBSNetworking.swift */; };
+		788043432668BE75004B0066 /* SBSNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788043412668BE75004B0066 /* SBSNetworking.swift */; };
 		79E106692667B4D80050FCB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E106682667B4D80050FCB8 /* AppDelegate.swift */; };
 		79E106722667B4D90050FCB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79E106712667B4D90050FCB8 /* Assets.xcassets */; };
 		79E106752667B4D90050FCB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79E106732667B4D90050FCB8 /* LaunchScreen.storyboard */; };
@@ -100,6 +102,7 @@
 		788040AF26686BEC004B0066 /* HomeViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewViewController.swift; sourceTree = "<group>"; };
 		788040B026686BEC004B0066 /* HomeViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewViewController.xib; sourceTree = "<group>"; };
 		788040B526686C8C004B0066 /* SDKTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SDKTest-Info.plist"; sourceTree = "<group>"; };
+		788043412668BE75004B0066 /* SBSNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBSNetworking.swift; sourceTree = "<group>"; };
 		79E106652667B4D80050FCB8 /* SBGoldSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SBGoldSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E106682667B4D80050FCB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79E106712667B4D90050FCB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -162,6 +165,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		788043402668BE66004B0066 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				788043412668BE75004B0066 /* SBSNetworking.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		79E1065C2667B4D80050FCB8 = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +221,7 @@
 		79E106E12667BCEB0050FCB8 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				788043402668BE66004B0066 /* Networking */,
 				79E106E22667BCEB0050FCB8 /* UI */,
 				79E106E92667BCEB0050FCB8 /* Commons */,
 				79E106EC2667BCEB0050FCB8 /* Extensions */,
@@ -487,6 +499,7 @@
 				79E107052667BCEB0050FCB8 /* SBSCollectionView+Ext.swift in Sources */,
 				79E1070B2667BCEB0050FCB8 /* SBSLog.swift in Sources */,
 				79E107002667BCEB0050FCB8 /* SBSGoldItemCell.swift in Sources */,
+				788043432668BE75004B0066 /* SBSNetworking.swift in Sources */,
 				79E107092667BCEB0050FCB8 /* SBSUIView+Ext.swift in Sources */,
 				79E107142667BCEB0050FCB8 /* SBSGoldBaseVC.swift in Sources */,
 				79E107122667BCEB0050FCB8 /* SBSNavigationView.swift in Sources */,
@@ -517,6 +530,7 @@
 				79E107382667C8240050FCB8 /* SBSBundle+Ext.swift in Sources */,
 				79E106FF2667BCEB0050FCB8 /* SBSGoldItemCell.swift in Sources */,
 				788040B226686BEC004B0066 /* HomeViewViewController.swift in Sources */,
+				788043422668BE75004B0066 /* SBSNetworking.swift in Sources */,
 				79E1070E2667BCEB0050FCB8 /* SBSUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
