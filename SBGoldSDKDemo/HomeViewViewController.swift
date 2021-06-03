@@ -11,6 +11,7 @@ import SBGoldSDK
 class HomeViewViewController: UIViewController {
   
   @IBAction func showGold(_ sender: Any) {
-    
+    let vc = SBSGoldVC()
+    navigationController?.pushViewController(vc, animated: true)
   }
 }

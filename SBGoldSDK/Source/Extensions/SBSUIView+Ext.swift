@@ -18,7 +18,7 @@ extension UIView {
   }
   
   func viewFromNibForClass() -> UIView {
-    let bundle = Bundle(for: type(of: self))
+    let bundle = Bundle.staticBundle!
     let nib = UINib(nibName: String(describing: type(of: self)), bundle: bundle)
     guard let view = nib.instantiate(withOwner: self, options: nil)[0] as? UIView else {
       return UIView()

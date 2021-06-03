@@ -18,7 +18,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="222" height="277"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DNr-v3-355">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="11" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DNr-v3-355">
                         <rect key="frame" x="0.0" y="0.0" width="222" height="222"/>
                         <color key="backgroundColor" systemColor="systemRedColor"/>
                         <constraints>
@@ -30,7 +30,7 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGW-p8-br0">
+                    <label opaque="NO" userInteractionEnabled="NO" tag="22" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGW-p8-br0">
                         <rect key="frame" x="5" y="230" width="212" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <nil key="textColor"/>
@@ -48,6 +48,10 @@
                 <constraint firstItem="wGW-p8-br0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="yAU-rP-cYk"/>
             </constraints>
             <size key="customSize" width="222" height="277"/>
+            <connections>
+                <outlet property="iconImv" destination="DNr-v3-355" id="z3Q-MS-xNq"/>
+                <outlet property="titleLb" destination="wGW-p8-br0" id="MC9-U8-SIU"/>
+            </connections>
             <point key="canvasLocation" x="-17" y="101"/>
         </collectionViewCell>
     </objects>

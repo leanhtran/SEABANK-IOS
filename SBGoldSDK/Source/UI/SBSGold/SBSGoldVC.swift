@@ -28,7 +28,7 @@ open class SBSGoldVC: SBSGoldBaseVC {
     let nibName = String(describing: type(of: self))
     super.init(nibName: nibName, bundle: Bundle.staticBundle)
   }
-  
+
   required public init?(coder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
@@ -36,6 +36,7 @@ open class SBSGoldVC: SBSGoldBaseVC {
   let insets: UIEdgeInsets = .zero
   
   override func setupView() {
+    addNavigation(title: "Hello")
     collectionView.register(SBSGoldItemCell.self)
     collectionView.delegate = self
     collectionView.dataSource = self
@@ -56,9 +57,10 @@ extension SBSGoldVC: UICollectionViewDelegate, UICollectionViewDataSource {
   
   public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let item = items[indexPath.row]
-    return Init(collectionView.dequeue(SBSGoldItemCell.self, indexPath: indexPath)) {
-      $0.bindData("", title: item.title)
-    }
+    let cell = collectionView
+      .dequeueReusableCell(withReuseIdentifier: "SBSGoldItemCell",
+                           for: indexPath)
+    return cell
   }
   
   public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

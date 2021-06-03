@@ -9,7 +9,7 @@ class ViewWithXib: UIView {
   override init(frame: CGRect) {
     super.init(frame: frame)
     setupNibView()
-    
+    setupView()
     if #available(iOS 13.0, *) {
       // Always adopt a light interface style.
       overrideUserInterfaceStyle = .light
@@ -24,6 +24,7 @@ class ViewWithXib: UIView {
   
   func addObservable(buttons: [UIButton]) {
     for (_, btn) in buttons.enumerated() {
+      btn.isUserInteractionEnabled = true
       btn.addTarget(self, action: #selector(didTapButton(_:)), for: .touchUpInside)
     }
   }
