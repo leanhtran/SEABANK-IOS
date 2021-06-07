@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -31,9 +31,8 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VjQ-my-Uji">
                     <rect key="frame" x="23" y="22" width="369" height="40"/>
                     <subviews>
-                        <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PA1-vJ-AlT">
-                            <rect key="frame" x="-23" y="0.0" width="415" height="40"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PA1-vJ-AlT">
+                            <rect key="frame" x="10" y="0.0" width="323" height="40"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
@@ -44,9 +43,13 @@
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
+                        <constraint firstItem="PA1-vJ-AlT" firstAttribute="top" secondItem="VjQ-my-Uji" secondAttribute="top" id="1be-cT-N3w"/>
                         <constraint firstAttribute="trailing" secondItem="mtP-B6-0me" secondAttribute="trailing" constant="15" id="5Et-rd-86A"/>
                         <constraint firstAttribute="height" constant="40" id="7Pe-7f-PSO"/>
+                        <constraint firstAttribute="bottom" secondItem="PA1-vJ-AlT" secondAttribute="bottom" id="84L-l4-oCl"/>
                         <constraint firstItem="mtP-B6-0me" firstAttribute="centerY" secondItem="VjQ-my-Uji" secondAttribute="centerY" id="AuV-bO-9Vj"/>
+                        <constraint firstItem="mtP-B6-0me" firstAttribute="leading" secondItem="PA1-vJ-AlT" secondAttribute="trailing" constant="10" id="B9K-1j-jx3"/>
+                        <constraint firstItem="PA1-vJ-AlT" firstAttribute="leading" secondItem="VjQ-my-Uji" secondAttribute="leading" constant="10" id="lUH-lS-qAa"/>
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="error" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5z-qj-IZ5">

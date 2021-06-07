@@ -19,9 +19,14 @@
                 <outlet property="continueBtn" destination="ZzM-UL-TiO" id="JaV-Xf-DrE"/>
                 <outlet property="deliveryFormView" destination="QX3-PQ-wfK" id="60B-OZ-mmM"/>
                 <outlet property="districtView" destination="brX-RA-PWU" id="6d2-hm-Aoi"/>
+                <outlet property="dueDateLb" destination="bsO-kX-e8O" id="RHq-Iu-fad"/>
+                <outlet property="dueDateTf" destination="Gbe-FA-Cpv" id="oI1-1h-YFB"/>
+                <outlet property="dueDateView" destination="Ed2-Ct-Q2S" id="Dmr-RE-l9Z"/>
                 <outlet property="goldImmediatelyView" destination="otg-VP-4qw" id="z0V-WR-FHd"/>
                 <outlet property="goldTypeView" destination="bGE-zT-guM" id="z07-dt-nz6"/>
+                <outlet property="immediatelyHeight" destination="iKB-cX-YtU" id="R0Y-BO-76t"/>
                 <outlet property="moneyLb" destination="YHB-PH-mFw" id="Hie-gZ-1bu"/>
+                <outlet property="periodView" destination="XLD-XY-SbM" id="Ku9-Sd-6Tv"/>
                 <outlet property="policyView" destination="NVo-SJ-XE7" id="00c-B7-zjI"/>
                 <outlet property="priceView" destination="TaF-3e-3FB" id="QE5-wC-viv"/>
                 <outlet property="promotionView" destination="qjV-Oy-GCP" id="ocw-Va-RNN"/>
@@ -29,6 +34,9 @@
                 <outlet property="referUserRadioView" destination="UwS-Xh-wgl" id="qMZ-tV-5Zg"/>
                 <outlet property="referUserTf" destination="pmS-Kl-m4e" id="o1V-eS-g4Q"/>
                 <outlet property="referUserView" destination="84n-yo-Re9" id="fHp-l1-RyQ"/>
+                <outlet property="storageFeeView" destination="FLj-tL-nxS" id="aWM-rO-QRs"/>
+                <outlet property="storageWithTermHeight" destination="vJq-Zv-fX7" id="JK1-yg-uWA"/>
+                <outlet property="storageWithTermView" destination="SpB-tA-ty9" id="Dfh-GM-e8F"/>
                 <outlet property="transactionDateView" destination="nAg-kR-SKv" id="rhA-Um-EAV"/>
                 <outlet property="transactionPlaceLb" destination="2G0-8b-lGb" id="WxW-yk-59Y"/>
                 <outlet property="transactionPlaceView" destination="Rdb-5f-Cfo" id="MS0-yK-MdP"/>
@@ -46,7 +54,7 @@
                     <rect key="frame" x="0.0" y="114" width="414" height="1345"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Onw-Y8-0J1">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="1274.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="1499"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tzA-ia-6Rp">
                                     <rect key="frame" x="23" y="10" width="368" height="65"/>
@@ -106,95 +114,95 @@
                                     <color key="textColor" red="0.16078431372549018" green="0.16078431372549018" blue="0.16078431372549018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b4n-8L-KYj" customClass="InputTextView" customModule="SBGold" customModuleProvider="target">
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b4n-8L-KYj" userLabel="City" customClass="InputTextView" customModule="SBGold" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="167.5" width="414" height="60"/>
-                                    <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="60" id="yl9-N3-8jL"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="brX-RA-PWU" customClass="InputTextView" customModule="SBGold" customModuleProvider="target">
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="brX-RA-PWU" userLabel="District" customClass="InputTextView" customModule="SBGold" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="237.5" width="414" height="60"/>
-                                    <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="60" id="jKn-Nx-46X"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rdb-5f-Cfo" customClass="InputTextView" customModule="SBGold" customModuleProvider="target">
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rdb-5f-Cfo" userLabel="Transaction Place" customClass="InputTextView" customModule="SBGold" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="307.5" width="414" height="60"/>
-                                    <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="60" id="bSt-W7-le5"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bGE-zT-guM" customClass="SBSInfoView" customModule="SBGold" customModuleProvider="target">
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bGE-zT-guM" userLabel="Gold Type" customClass="SBSInfoView" customModule="SBGold" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="377.5" width="414" height="30"/>
-                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="30" id="jX3-Oy-pLh"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vEM-Ru-l9t" customClass="SBSNumberView" customModule="SBGold" customModuleProvider="target">
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vEM-Ru-l9t" userLabel="Quantity" customClass="SBSNumberView" customModule="SBGold" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="412.5" width="414" height="35"/>
-                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="35" id="xhr-zU-rhY"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TaF-3e-3FB" customClass="SBSInfoView" customModule="SBGold" customModuleProvider="target">
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TaF-3e-3FB" userLabel="Price" customClass="SBSInfoView" customModule="SBGold" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="452.5" width="414" height="30"/>
-                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="30" id="J2z-xC-7TS"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ww0-NJ-PQr" customClass="SBSInfoView" customModule="SBGold" customModuleProvider="target">
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ww0-NJ-PQr" userLabel="Amount" customClass="SBSInfoView" customModule="SBGold" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="487.5" width="414" height="30"/>
-                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="30" id="C5Q-D8-Wdz"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QX3-PQ-wfK" customClass="InputTextView" customModule="SBGold" customModuleProvider="target">
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QX3-PQ-wfK" userLabel="Delevery Style" customClass="InputTextView" customModule="SBGold" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="537.5" width="414" height="60"/>
-                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="60" id="QL2-gf-J1r"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="otg-VP-4qw" customClass="SBSCheckBoxView" customModule="SBGold" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="642.5" width="414" height="80"/>
-                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="otg-VP-4qw" userLabel="Immediately box" customClass="SBSCheckBoxView" customModule="SBGold" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="792.5" width="414" height="80"/>
+                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="80" id="iKB-cX-YtU"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Zy-vr-Fq2" customClass="InputTextView" customModule="SBGold" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="732.5" width="414" height="60"/>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Zy-vr-Fq2" userLabel="Transaction Type" customClass="InputTextView" customModule="SBGold" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="882.5" width="414" height="60"/>
                                     <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="60" id="xrV-54-nTr"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qjV-Oy-GCP" customClass="InputTextView" customModule="SBGold" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="802.5" width="414" height="60"/>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qjV-Oy-GCP" userLabel="Promotion Code" customClass="InputTextView" customModule="SBGold" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="952.5" width="414" height="60"/>
                                     <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="60" id="LqP-Jt-uDX"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i3C-rX-NF3" customClass="SBSInfoView" customModule="SBGold" customModuleProvider="target">
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i3C-rX-NF3" userLabel="Appointment Date" customClass="SBSInfoView" customModule="SBGold" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="602.5" width="414" height="30"/>
                                     <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="30" id="LdG-B0-Yxo"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="84n-yo-Re9">
-                                    <rect key="frame" x="23" y="949.5" width="368" height="40"/>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="84n-yo-Re9" userLabel="Refer input text">
+                                    <rect key="frame" x="23" y="1099.5" width="368" height="40"/>
                                     <subviews>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pmS-Kl-m4e">
-                                            <rect key="frame" x="0.0" y="0.0" width="318" height="40"/>
+                                            <rect key="frame" x="10" y="0.0" width="308" height="40"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
@@ -222,44 +230,44 @@
                                         <constraint firstAttribute="bottom" secondItem="fUQ-Vo-JdF" secondAttribute="bottom" id="fbT-kT-uIl"/>
                                         <constraint firstAttribute="height" constant="40" id="qLn-85-Oe8"/>
                                         <constraint firstAttribute="bottom" secondItem="pmS-Kl-m4e" secondAttribute="bottom" id="ty5-Yw-4j7"/>
-                                        <constraint firstItem="pmS-Kl-m4e" firstAttribute="leading" secondItem="84n-yo-Re9" secondAttribute="leading" id="yRq-x2-HpQ"/>
+                                        <constraint firstItem="pmS-Kl-m4e" firstAttribute="leading" secondItem="84n-yo-Re9" secondAttribute="leading" constant="10" id="yRq-x2-HpQ"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UwS-Xh-wgl" customClass="SBSRadioView" customModule="SBGold" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="904.5" width="414" height="40"/>
-                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UwS-Xh-wgl" userLabel="Refer User Info" customClass="SBSRadioView" customModule="SBGold" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="1054.5" width="414" height="40"/>
+                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="40" id="2yG-gJ-xoL"/>
                                     </constraints>
                                 </view>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thông tin người giới thiệu (nếu có)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ge5-Pc-gf0">
-                                    <rect key="frame" x="28" y="882.5" width="236" height="17"/>
+                                    <rect key="frame" x="28" y="1032.5" width="236" height="17"/>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nAg-kR-SKv" customClass="SBSInfoView" customModule="SBGold" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="994.5" width="414" height="30"/>
-                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nAg-kR-SKv" userLabel="Transaction Date" customClass="SBSInfoView" customModule="SBGold" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="1144.5" width="414" height="30"/>
+                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="30" id="tvi-Jr-r5U"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NVo-SJ-XE7" customClass="SBSCheckBoxView" customModule="SBGold" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="1034.5" width="414" height="60"/>
-                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NVo-SJ-XE7" userLabel="Agrrement" customClass="SBSCheckBoxView" customModule="SBGold" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="1184.5" width="414" height="60"/>
+                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="60" id="1h2-ik-aEP"/>
                                     </constraints>
                                 </view>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_logo_bottom" translatesAutoresizingMaskIntoConstraints="NO" id="Acy-w7-JPV">
-                                    <rect key="frame" x="23" y="1114.5" width="290" height="80"/>
+                                    <rect key="frame" x="23" y="1264.5" width="290" height="154.5"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" secondItem="Acy-w7-JPV" secondAttribute="height" multiplier="29:8" id="0XJ-kH-ssv"/>
+                                        <constraint firstAttribute="width" secondItem="Acy-w7-JPV" secondAttribute="height" multiplier="15:8" id="0XJ-kH-ssv"/>
                                     </constraints>
                                 </imageView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZzM-UL-TiO">
-                                    <rect key="frame" x="23" y="1214.5" width="368" height="40"/>
+                                    <rect key="frame" x="23" y="1439" width="368" height="40"/>
                                     <color key="backgroundColor" red="0.84313725490000002" green="0.12549019610000001" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="40" id="t3Y-2a-0Un"/>
@@ -273,6 +281,81 @@
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SpB-tA-ty9">
+                                    <rect key="frame" x="0.0" y="637.5" width="414" height="150"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ngày đến hạn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsO-kX-e8O">
+                                            <rect key="frame" x="28" y="5" width="90" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ed2-Ct-Q2S" userLabel="Due Date">
+                                            <rect key="frame" x="23" y="32" width="368" height="40"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gbe-FA-Cpv">
+                                                    <rect key="frame" x="10" y="0.0" width="308" height="40"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_calendar" translatesAutoresizingMaskIntoConstraints="NO" id="dQd-1b-rmB">
+                                                    <rect key="frame" x="319" y="8" width="49" height="24"/>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AY7-7b-ybT">
+                                                    <rect key="frame" x="318" y="0.0" width="1" height="40"/>
+                                                    <color key="backgroundColor" red="0.81176470590000005" green="0.81176470590000005" blue="0.81176470590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="1" id="f11-VI-RIN"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="AY7-7b-ybT" firstAttribute="top" secondItem="Ed2-Ct-Q2S" secondAttribute="top" id="0xG-14-P54"/>
+                                                <constraint firstAttribute="trailing" secondItem="Gbe-FA-Cpv" secondAttribute="trailing" constant="50" id="193-DW-vrD"/>
+                                                <constraint firstItem="Gbe-FA-Cpv" firstAttribute="leading" secondItem="Ed2-Ct-Q2S" secondAttribute="leading" constant="10" id="K9D-jO-iad"/>
+                                                <constraint firstItem="AY7-7b-ybT" firstAttribute="leading" secondItem="Gbe-FA-Cpv" secondAttribute="trailing" id="LjB-QJ-iU4"/>
+                                                <constraint firstAttribute="height" constant="40" id="PlI-np-Abx"/>
+                                                <constraint firstItem="Gbe-FA-Cpv" firstAttribute="top" secondItem="Ed2-Ct-Q2S" secondAttribute="top" id="R0v-ae-RDZ"/>
+                                                <constraint firstItem="dQd-1b-rmB" firstAttribute="centerY" secondItem="Ed2-Ct-Q2S" secondAttribute="centerY" id="UQd-fn-Rcz"/>
+                                                <constraint firstItem="dQd-1b-rmB" firstAttribute="leading" secondItem="Gbe-FA-Cpv" secondAttribute="trailing" constant="1" id="aVs-PP-BpG"/>
+                                                <constraint firstAttribute="bottom" secondItem="Gbe-FA-Cpv" secondAttribute="bottom" id="jPA-Cz-A5C"/>
+                                                <constraint firstAttribute="bottom" secondItem="AY7-7b-ybT" secondAttribute="bottom" id="p6V-cz-MXb"/>
+                                                <constraint firstAttribute="trailing" secondItem="dQd-1b-rmB" secondAttribute="trailing" id="ph6-8n-tdD"/>
+                                                <constraint firstItem="dQd-1b-rmB" firstAttribute="top" secondItem="Ed2-Ct-Q2S" secondAttribute="top" constant="8" id="yT4-6M-12h"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XLD-XY-SbM" customClass="SBSInfoView" customModule="SBGold" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="77" width="414" height="30"/>
+                                            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="WVS-7S-ZZQ"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FLj-tL-nxS" customClass="SBSInfoView" customModule="SBGold" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="112" width="414" height="30"/>
+                                            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="zRu-wG-xZW"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="XLD-XY-SbM" firstAttribute="leading" secondItem="SpB-tA-ty9" secondAttribute="leading" id="6FV-os-oZP"/>
+                                        <constraint firstItem="XLD-XY-SbM" firstAttribute="top" secondItem="Ed2-Ct-Q2S" secondAttribute="bottom" constant="5" id="D6E-Fq-Qhc"/>
+                                        <constraint firstItem="FLj-tL-nxS" firstAttribute="leading" secondItem="XLD-XY-SbM" secondAttribute="leading" id="IPG-gf-SL0"/>
+                                        <constraint firstItem="FLj-tL-nxS" firstAttribute="centerX" secondItem="SpB-tA-ty9" secondAttribute="centerX" id="JP8-gQ-z8c"/>
+                                        <constraint firstItem="Ed2-Ct-Q2S" firstAttribute="centerX" secondItem="SpB-tA-ty9" secondAttribute="centerX" id="Ktl-6P-RV4"/>
+                                        <constraint firstItem="FLj-tL-nxS" firstAttribute="top" secondItem="XLD-XY-SbM" secondAttribute="bottom" constant="5" id="RUP-ma-h84"/>
+                                        <constraint firstItem="bsO-kX-e8O" firstAttribute="top" secondItem="SpB-tA-ty9" secondAttribute="top" constant="5" id="SiE-bu-vJY"/>
+                                        <constraint firstItem="Ed2-Ct-Q2S" firstAttribute="leading" secondItem="SpB-tA-ty9" secondAttribute="leading" constant="23" id="XOz-Ga-TYG"/>
+                                        <constraint firstItem="Ed2-Ct-Q2S" firstAttribute="top" secondItem="bsO-kX-e8O" secondAttribute="bottom" constant="10" id="oOx-TS-y3c"/>
+                                        <constraint firstItem="XLD-XY-SbM" firstAttribute="centerX" secondItem="SpB-tA-ty9" secondAttribute="centerX" id="uFy-ZR-FbN"/>
+                                        <constraint firstAttribute="height" constant="150" id="vJq-Zv-fX7"/>
+                                        <constraint firstItem="bsO-kX-e8O" firstAttribute="leading" secondItem="SpB-tA-ty9" secondAttribute="leading" constant="28" id="yQC-oH-94h"/>
+                                    </constraints>
+                                </view>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
@@ -295,6 +378,7 @@
                                 <constraint firstItem="Rdb-5f-Cfo" firstAttribute="leading" secondItem="brX-RA-PWU" secondAttribute="leading" id="Fqq-sx-hfg"/>
                                 <constraint firstItem="nAg-kR-SKv" firstAttribute="centerX" secondItem="Onw-Y8-0J1" secondAttribute="centerX" id="Fxz-id-fzu"/>
                                 <constraint firstItem="Ww0-NJ-PQr" firstAttribute="top" secondItem="TaF-3e-3FB" secondAttribute="bottom" constant="5" id="GhN-CW-EXv"/>
+                                <constraint firstItem="SpB-tA-ty9" firstAttribute="top" secondItem="i3C-rX-NF3" secondAttribute="bottom" constant="5" id="HQr-d9-8Mj"/>
                                 <constraint firstItem="Rdb-5f-Cfo" firstAttribute="top" secondItem="brX-RA-PWU" secondAttribute="bottom" constant="10" id="IWf-PE-JNF"/>
                                 <constraint firstItem="otg-VP-4qw" firstAttribute="leading" secondItem="Onw-Y8-0J1" secondAttribute="leading" id="IZa-ta-tSp"/>
                                 <constraint firstItem="otg-VP-4qw" firstAttribute="centerX" secondItem="Onw-Y8-0J1" secondAttribute="centerX" id="Iuo-Pn-pqS"/>
@@ -310,12 +394,13 @@
                                 <constraint firstItem="Ww0-NJ-PQr" firstAttribute="leading" secondItem="Onw-Y8-0J1" secondAttribute="leading" id="XTE-bS-X1A"/>
                                 <constraint firstItem="i3C-rX-NF3" firstAttribute="top" secondItem="QX3-PQ-wfK" secondAttribute="bottom" constant="5" id="XXz-O5-bH2"/>
                                 <constraint firstItem="Acy-w7-JPV" firstAttribute="width" secondItem="Onw-Y8-0J1" secondAttribute="width" multiplier="0.7" id="Xf0-qw-939"/>
-                                <constraint firstItem="otg-VP-4qw" firstAttribute="top" secondItem="i3C-rX-NF3" secondAttribute="bottom" constant="10" id="XpZ-aF-bwH"/>
                                 <constraint firstItem="TaF-3e-3FB" firstAttribute="centerX" secondItem="Onw-Y8-0J1" secondAttribute="centerX" id="Y4x-2b-gzY"/>
                                 <constraint firstItem="vEM-Ru-l9t" firstAttribute="centerX" secondItem="Onw-Y8-0J1" secondAttribute="centerX" id="aa6-aD-uEn"/>
                                 <constraint firstItem="nAg-kR-SKv" firstAttribute="top" secondItem="84n-yo-Re9" secondAttribute="bottom" constant="5" id="csT-Oz-Piw"/>
                                 <constraint firstItem="UwS-Xh-wgl" firstAttribute="leading" secondItem="Onw-Y8-0J1" secondAttribute="leading" id="eZ0-Yk-qjI"/>
+                                <constraint firstItem="SpB-tA-ty9" firstAttribute="leading" secondItem="Onw-Y8-0J1" secondAttribute="leading" id="fVa-Q2-JIO"/>
                                 <constraint firstItem="b4n-8L-KYj" firstAttribute="top" secondItem="2G0-8b-lGb" secondAttribute="bottom" constant="15" id="gG0-lL-o2V"/>
+                                <constraint firstAttribute="trailing" secondItem="SpB-tA-ty9" secondAttribute="trailing" id="gkS-lI-szO"/>
                                 <constraint firstItem="pA5-Wa-pWK" firstAttribute="leading" secondItem="tzA-ia-6Rp" secondAttribute="leading" id="h9k-kA-Flj"/>
                                 <constraint firstItem="Ge5-Pc-gf0" firstAttribute="leading" secondItem="Onw-Y8-0J1" secondAttribute="leading" constant="28" id="hrc-LE-cZl"/>
                                 <constraint firstItem="ZzM-UL-TiO" firstAttribute="centerX" secondItem="Onw-Y8-0J1" secondAttribute="centerX" id="ibf-Vw-WJF"/>
@@ -330,6 +415,7 @@
                                 <constraint firstItem="vEM-Ru-l9t" firstAttribute="leading" secondItem="Onw-Y8-0J1" secondAttribute="leading" id="sgp-8X-yFp"/>
                                 <constraint firstItem="ZzM-UL-TiO" firstAttribute="top" secondItem="Acy-w7-JPV" secondAttribute="bottom" constant="20" id="t55-Ha-mpw"/>
                                 <constraint firstItem="qjV-Oy-GCP" firstAttribute="top" secondItem="8Zy-vr-Fq2" secondAttribute="bottom" constant="10" id="tFL-h8-RWO"/>
+                                <constraint firstItem="otg-VP-4qw" firstAttribute="top" secondItem="SpB-tA-ty9" secondAttribute="bottom" constant="5" id="uqt-ov-5Xs"/>
                                 <constraint firstItem="brX-RA-PWU" firstAttribute="centerX" secondItem="Onw-Y8-0J1" secondAttribute="centerX" id="vN8-ke-zil"/>
                                 <constraint firstItem="TaF-3e-3FB" firstAttribute="leading" secondItem="Onw-Y8-0J1" secondAttribute="leading" id="vlN-jp-Tk1"/>
                                 <constraint firstItem="i3C-rX-NF3" firstAttribute="leading" secondItem="Onw-Y8-0J1" secondAttribute="leading" id="wPY-Mp-KyB"/>
@@ -368,6 +454,7 @@
     <resources>
         <image name="bg_account" width="110" height="19.5"/>
         <image name="ic_arrow_down" width="12" height="8"/>
+        <image name="ic_calendar" width="27" height="30"/>
         <image name="ic_enter" width="25" height="28"/>
         <image name="ic_logo_bottom" width="262" height="108"/>
         <image name="ic_user" width="31" height="31"/>

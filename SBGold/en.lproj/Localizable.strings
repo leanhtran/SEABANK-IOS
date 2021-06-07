@@ -13,7 +13,7 @@
 "GoldVC.GoldInfo" = "Thông tin vàng";
 "GoldVC.BuyGold" = "Mua vàng";
 
-// MARK: BuyGod
+// MARK: BuyGold
 "BuyGod.NaviTitle" = "Mua vàng";
 "BuyGod.Warning" = "(Lưu ý: Không được phép sử dụng nguồn tiền từ các khoản vay để mua Vàng)";
 "BuyGod.TransactionPlace" = "Nơi gửi/ rút vàng";
@@ -28,6 +28,10 @@
 "BuyGod.Amount" = "Thành tiền";
 
 "BuyGod.DeleveryForm" = "Hình thức giao nhận";
+"BuyGod.DueDate" = "Ngày đến hạn";
+"BuyGod.StorageTerm" = "Kỳ hạn giữ hộ";
+"BuyGod.StorageFee" = "Phí giữ hộ dự kiến";
+
 "BuyGod.AppointmentDate" = "Ngày hẹn trả";
 "BuyGod.ReceiveImmediately" = "Đăng ký nhận vàng ngay";
 "BuyGod.ContactNotice" = "SeABank sẽ liên hệ lại với Quý khách trong thời gian sớm nhất nếu  thu xếp được việc giao vàng ngay trong ngày";
@@ -41,3 +45,23 @@
 "BuyGod.ReferUserPhone" = "Nhập số điện thoại người giới thiệu";
 "BuyGod.TransactionDate" = "Ngày giao dịch";
 "BuyGod.Policy" = "Tôi xác nhận đã đọc, hiểu rõ và chấp nhận các Điều kiện và điều khoản của dịch vụ.";
+
+"BuyGod.DeliveryType.Appointment" = "Hẹn trả";
+"BuyGod.DeliveryType.StorageWithTerm" = "Hẹn trả chuyển giữ có kỳ hạn";
+"BuyGod.DeliveryType.StorageWithoutTerm" = "Hẹn trả chuyển giữ không kỳ hạn";
+
+// MARK: BuyGold Verfify Info
+"BGVI.NaviTitle" = "Xác nhận thông tin";
+"BGVI.Account" = "Tài khoản gửi";
+"BGVI.FullName" = "Họ và tên";
+"BGVI.TransactionPlace" = "Nơi gửi/ rút vàng";
+"BGVI.GoldType" = "Loại vàng";
+"BGVI.Quantity" = "Số lượng";
+"BGVI.Price" = "Đơn giá";
+"BGVI.Amount" = "Số tiền thanh toán\n(không bao gồm phí)";
+"BGVI.DeleveryForm" = "Hình thức giao nhận";
+"BGVI.AppointmentDate" = "Ngày hẹn trả";
+"BGVI.TransactionClassify" = "Phân loại giao dịch";
+"BGVI.PromotionCode" = "Mã khuyến mại";
+"BGVI.ReferUserInfo" = "Người giới thiệu";
+"BGVI.TransactionDate" = "Ngày giao dịch";

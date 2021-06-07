@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SBSPickerView" customModule="SBGold" customModuleProvider="target">
+            <connections>
+                <outlet property="doneBtn" destination="Kx3-mC-fVR" id="Wnq-Q7-apI"/>
+                <outlet property="pickerView" destination="DaT-HT-7wf" id="Z6K-ST-oRA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="251"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <pickerView contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="DaT-HT-7wf">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                    <color key="backgroundColor" systemColor="systemGray3Color"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="Ofy-xd-9gi"/>
+                    </constraints>
+                </pickerView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kx3-mC-fVR">
+                    <rect key="frame" x="334" y="0.0" width="80" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="7ob-VU-Aov"/>
+                        <constraint firstAttribute="width" constant="80" id="Oax-zB-jsb"/>
+                    </constraints>
+                    <state key="normal" title="Done"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemGray3Color"/>
+            <constraints>
+                <constraint firstItem="Kx3-mC-fVR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3is-qY-sQC"/>
+                <constraint firstAttribute="trailing" secondItem="Kx3-mC-fVR" secondAttribute="trailing" id="VHN-Uq-URf"/>
+                <constraint firstItem="DaT-HT-7wf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="c8T-lX-WEy"/>
+                <constraint firstAttribute="trailing" secondItem="DaT-HT-7wf" secondAttribute="trailing" id="hak-xd-hCa"/>
+                <constraint firstItem="DaT-HT-7wf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ukS-Hx-JMb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="140.57971014492756" y="309.70982142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

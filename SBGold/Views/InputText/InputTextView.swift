@@ -7,15 +7,11 @@ final class InputTextView: ViewWithXib {
   @IBOutlet weak private var leadingSpace: NSLayoutConstraint!
   @IBOutlet weak private var containerView: UIView!
   
+  private var onTapGes: (() -> ())?
+  
   var keyboardType: UIKeyboardType = .default {
     didSet {
       inputTf.keyboardType = keyboardType
-    }
-  }
-  
-  var picker: UIPickerView? {
-    didSet {
-      inputTf.inputView = picker
     }
   }
   
@@ -102,16 +98,23 @@ final class InputTextView: ViewWithXib {
     }
   }
   
-  func setDisable() {
-    inputTf.alpha = 0.5
+  func addTapGes(completionHandler: @escaping() -> ()) {
+    onTapGes = completionHandler
+    let tapGes = UITapGestureRecognizer(target: self, action: #selector(didTapAction))
     editEnable = false
+    isUserInteractionEnabled = true
+    addGestureRecognizer(tapGes)
+  }
+  
+  @objc
+  private func didTapAction() {
+    onTapGes?()
   }
   
   override func setupView() {
     inputTf.delegate = self
     titleLb.text = ""
     bottomTitleLb.text = ""
-    inputTf.setEdgeInsets(UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10))
     inputTf.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
     Apply(containerView!) {
       $0.layer.borderWidth = 1
@@ -124,11 +127,6 @@ final class InputTextView: ViewWithXib {
   @objc
   private func textFieldDidChange() {
     onTextChange?(inputTf.text.stringValue())
-  }
-  
-  @objc
-  private func datePickerValueChanged(_ picker: UIPickerView) {
-    
   }
 }
 

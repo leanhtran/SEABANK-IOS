@@ -46,6 +46,10 @@
 		792053FB266E3DD2005467C7 /* SBSRadioView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 792053FA266E3DD2005467C7 /* SBSRadioView.xib */; };
 		7970D350266E40CB004C4344 /* SBSDate+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7970D34F266E40CB004C4344 /* SBSDate+Ext.swift */; };
 		7970D354266E4776004C4344 /* SBSCheckBoxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7970D353266E4776004C4344 /* SBSCheckBoxView.xib */; };
+		7970D358266E5722004C4344 /* SBSPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7970D357266E5722004C4344 /* SBSPickerView.swift */; };
+		7970D360266E5EEF004C4344 /* SBSPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7970D35F266E5EEF004C4344 /* SBSPickerView.xib */; };
+		7970D365266E69AD004C4344 /* SBSVerifyBuyInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7970D363266E69AD004C4344 /* SBSVerifyBuyInfoVC.swift */; };
+		7970D366266E69AD004C4344 /* SBSVerifyBuyInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7970D364266E69AD004C4344 /* SBSVerifyBuyInfoVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +96,10 @@
 		792053FA266E3DD2005467C7 /* SBSRadioView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SBSRadioView.xib; sourceTree = "<group>"; };
 		7970D34F266E40CB004C4344 /* SBSDate+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SBSDate+Ext.swift"; sourceTree = "<group>"; };
 		7970D353266E4776004C4344 /* SBSCheckBoxView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SBSCheckBoxView.xib; sourceTree = "<group>"; };
+		7970D357266E5722004C4344 /* SBSPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBSPickerView.swift; sourceTree = "<group>"; };
+		7970D35F266E5EEF004C4344 /* SBSPickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SBSPickerView.xib; sourceTree = "<group>"; };
+		7970D363266E69AD004C4344 /* SBSVerifyBuyInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBSVerifyBuyInfoVC.swift; sourceTree = "<group>"; };
+		7970D364266E69AD004C4344 /* SBSVerifyBuyInfoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SBSVerifyBuyInfoVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +240,7 @@
 		787E010C266DA8C1008BBEC1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7970D356266E5711004C4344 /* PickerView */,
 				787E0156266E19F6008BBEC1 /* RadioView */,
 				787E014D266DFC2D008BBEC1 /* CheckBox */,
 				787E0146266DF083008BBEC1 /* NumberView */,
@@ -253,6 +262,7 @@
 		787E012A266DCF42008BBEC1 /* SBBuyGold */ = {
 			isa = PBXGroup;
 			children = (
+				7970D362266E695D004C4344 /* SBSVerifyBuyInfo */,
 				787E012B266DCF64008BBEC1 /* SBBuyGoldVC.swift */,
 				787E012C266DCF64008BBEC1 /* SBBuyGoldVC.xib */,
 			);
@@ -310,6 +320,24 @@
 				792053FA266E3DD2005467C7 /* SBSRadioView.xib */,
 			);
 			path = RadioView;
+			sourceTree = "<group>";
+		};
+		7970D356266E5711004C4344 /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				7970D357266E5722004C4344 /* SBSPickerView.swift */,
+				7970D35F266E5EEF004C4344 /* SBSPickerView.xib */,
+			);
+			path = PickerView;
+			sourceTree = "<group>";
+		};
+		7970D362266E695D004C4344 /* SBSVerifyBuyInfo */ = {
+			isa = PBXGroup;
+			children = (
+				7970D363266E69AD004C4344 /* SBSVerifyBuyInfoVC.swift */,
+				7970D364266E69AD004C4344 /* SBSVerifyBuyInfoVC.xib */,
+			);
+			path = SBSVerifyBuyInfo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,8 +407,10 @@
 				787E00D1266DA85A008BBEC1 /* LaunchScreen.storyboard in Resources */,
 				792053FB266E3DD2005467C7 /* SBSRadioView.xib in Resources */,
 				7970D354266E4776004C4344 /* SBSCheckBoxView.xib in Resources */,
+				7970D366266E69AD004C4344 /* SBSVerifyBuyInfoVC.xib in Resources */,
 				787E0143266DEF95008BBEC1 /* SBSInfoView.xib in Resources */,
 				787E00CE266DA85A008BBEC1 /* Assets.xcassets in Resources */,
+				7970D360266E5EEF004C4344 /* SBSPickerView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +424,7 @@
 				787E011C266DA8C1008BBEC1 /* SBSNSObject+Ext.swift in Sources */,
 				787E014C266DFA10008BBEC1 /* SBSString+Ext.swift in Sources */,
 				787E011E266DA8C1008BBEC1 /* SBSUIView+Ext.swift in Sources */,
+				7970D358266E5722004C4344 /* SBSPickerView.swift in Sources */,
 				787E013A266DE403008BBEC1 /* SBSTextField+Ext.swift in Sources */,
 				787E0138266DE393008BBEC1 /* InputTextView.swift in Sources */,
 				787E0120266DA8C1008BBEC1 /* SBSNavigationView.swift in Sources */,
@@ -411,6 +442,7 @@
 				787E013F266DEF73008BBEC1 /* SBSInfoView.swift in Sources */,
 				787E011A266DA8C1008BBEC1 /* SBSBundle+Ext.swift in Sources */,
 				787E0117266DA8C1008BBEC1 /* SBSLog.swift in Sources */,
+				7970D365266E69AD004C4344 /* SBSVerifyBuyInfoVC.swift in Sources */,
 				787E012D266DCF64008BBEC1 /* SBBuyGoldVC.swift in Sources */,
 				787E0113266DA8C1008BBEC1 /* SBSGoldVC.swift in Sources */,
 				787E0116266DA8C1008BBEC1 /* SBSNetworking.swift in Sources */,
