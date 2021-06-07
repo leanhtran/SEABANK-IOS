@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CheckBoxView" customModule="SBGold" customModuleProvider="target">
+            <connections>
+                <outlet property="checkBtn" destination="WDy-ow-FvI" id="95B-Md-sLb"/>
+                <outlet property="checkImv" destination="gig-gM-x3s" id="FRk-Hf-FKA"/>
+                <outlet property="messageLb" destination="0aD-uP-O60" id="WH2-8D-VUa"/>
+                <outlet property="titleLb" destination="yPD-ZV-iXn" id="KdE-8o-Gu9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="426"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPD-ZV-iXn">
+                    <rect key="frame" x="55" y="14" width="35.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.16078431369999999" green="0.16078431369999999" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0aD-uP-O60">
+                    <rect key="frame" x="24" y="38" width="366" height="13.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.84313725490000002" green="0.098039215690000001" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_box" translatesAutoresizingMaskIntoConstraints="NO" id="gig-gM-x3s">
+                    <rect key="frame" x="23" y="10" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="F14-ls-nkN"/>
+                        <constraint firstAttribute="width" secondItem="gig-gM-x3s" secondAttribute="height" multiplier="1:1" id="paN-dD-sjA"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDy-ow-FvI">
+                    <rect key="frame" x="15" y="5" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="tEP-jJ-JwF"/>
+                        <constraint firstAttribute="width" constant="40" id="tOG-Z0-TGI"/>
+                    </constraints>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="WDy-ow-FvI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="1pZ-7a-Wgf"/>
+                <constraint firstItem="WDy-ow-FvI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="9dK-St-gQ4"/>
+                <constraint firstItem="gig-gM-x3s" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="CtC-Jd-p3i"/>
+                <constraint firstItem="yPD-ZV-iXn" firstAttribute="leading" secondItem="WDy-ow-FvI" secondAttribute="trailing" id="SY0-HV-xDH"/>
+                <constraint firstItem="0aD-uP-O60" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="XOM-hH-d9h"/>
+                <constraint firstItem="yPD-ZV-iXn" firstAttribute="centerY" secondItem="gig-gM-x3s" secondAttribute="centerY" id="g1E-Xa-Wbr"/>
+                <constraint firstItem="0aD-uP-O60" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="i7B-6c-7Jp"/>
+                <constraint firstItem="0aD-uP-O60" firstAttribute="top" secondItem="yPD-ZV-iXn" secondAttribute="bottom" constant="7" id="nVJ-gz-NLv"/>
+                <constraint firstItem="gig-gM-x3s" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="23" id="w3p-ZD-Fke"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="95.652173913043484" y="265.84821428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_box" width="50" height="50"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

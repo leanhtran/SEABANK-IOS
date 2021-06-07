@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		787E00C5266DA859008BBEC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787E00C4266DA859008BBEC1 /* AppDelegate.swift */; };
+		787E00CE266DA85A008BBEC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 787E00CD266DA85A008BBEC1 /* Assets.xcassets */; };
+		787E00D1266DA85A008BBEC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 787E00CF266DA85A008BBEC1 /* LaunchScreen.storyboard */; };
+		787E0110266DA8C1008BBEC1 /* SBSGoldBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787E00F5266DA8C1008BBEC1 /* SBSGoldBaseVC.swift */; };
+		787E0111266DA8C1008BBEC1 /* SBSViewWithXib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787E00F8266DA8C1008BBEC1 /* SBSViewWithXib.swift */; };
+		787E0112266DA8C1008BBEC1 /* SBSGoldVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 787E00FB266DA8C1008BBEC1 /* SBSGoldVC.xib */; };
+		787E0113266DA8C1008BBEC1 /* SBSGoldVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787E00FC266DA8C1008BBEC1 /* SBSGoldVC.swift */; };
+		787E0114266DA8C1008BBEC1 /* SBSGoldItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787E00FE266DA8C1008BBEC1 /* SBSGoldItemCell.swift */; };
+		787E0115266DA8C1008BBEC1 /* SBSGoldItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 787E00FF266DA8C1008BBEC1 /* SBSGoldItemCell.xib */; };
+		787E0116266DA8C1008BBEC1 /* SBSNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787E0101266DA8C1008BBEC1 /* SBSNetworking.swift */; };
+		787E0117266DA8C1008BBEC1 /* SBSLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787E0103266DA8C1008BBEC1 /* SBSLog.swift */; };
+		787E0118266DA8C1008BBEC1 /* SBSDimentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787E0104266DA8C1008BBEC1 /* SBSDimentions.swift */; };
+		787E0119266DA8C1008BBEC1 /* SBSUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787E0105266DA8C1008BBEC1 /* SBSUtils.swift */; };
+		787E011A266DA8C1008BBEC1 /* SBSBundle+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787E0107266DA8C1008BBEC1 /* SBSBundle+Ext.swift */; };
+		787E011B266DA8C1008BBEC1 /* SBSCollectionView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787E0108266DA8C1008BBEC1 /* SBSCollectionView+Ext.swift */; };
+		787E011C266DA8C1008BBEC1 /* SBSNSObject+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787E0109266DA8C1008BBEC1 /* SBSNSObject+Ext.swift */; };
+		787E011D266DA8C1008BBEC1 /* SBSViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787E010A266DA8C1008BBEC1 /* SBSViewController+Ext.swift */; };
+		787E011E266DA8C1008BBEC1 /* SBSUIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787E010B266DA8C1008BBEC1 /* SBSUIView+Ext.swift */; };
+		787E0120266DA8C1008BBEC1 /* SBSNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787E010F266DA8C1008BBEC1 /* SBSNavigationView.swift */; };
+		787E0124266DCB46008BBEC1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 787E0126266DCB46008BBEC1 /* Localizable.strings */; };
+		787E0129266DCC17008BBEC1 /* LocalizableText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787E0128266DCC17008BBEC1 /* LocalizableText.swift */; };
+		787E012D266DCF64008BBEC1 /* SBBuyGoldVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787E012B266DCF64008BBEC1 /* SBBuyGoldVC.swift */; };
+		787E012E266DCF64008BBEC1 /* SBBuyGoldVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 787E012C266DCF64008BBEC1 /* SBBuyGoldVC.xib */; };
+		787E0133266DDBC7008BBEC1 /* SBSCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787E0132266DDBC7008BBEC1 /* SBSCoordinator.swift */; };
+		787E0137266DE393008BBEC1 /* InputTextView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 787E0135266DE393008BBEC1 /* InputTextView.xib */; };
+		787E0138266DE393008BBEC1 /* InputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787E0136266DE393008BBEC1 /* InputTextView.swift */; };
+		787E013A266DE403008BBEC1 /* SBSTextField+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787E0139266DE403008BBEC1 /* SBSTextField+Ext.swift */; };
+		787E013C266DE43F008BBEC1 /* SBSOptional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787E013B266DE43F008BBEC1 /* SBSOptional.swift */; };
+		787E013F266DEF73008BBEC1 /* SBSInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787E013E266DEF73008BBEC1 /* SBSInfoView.swift */; };
+		787E0143266DEF95008BBEC1 /* SBSInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 787E0142266DEF95008BBEC1 /* SBSInfoView.xib */; };
+		787E0145266DF07E008BBEC1 /* SBSNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787E0144266DF07E008BBEC1 /* SBSNumberView.swift */; };
+		787E0148266DF08E008BBEC1 /* SBSNumberView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 787E0147266DF08E008BBEC1 /* SBSNumberView.xib */; };
+		787E014A266DF596008BBEC1 /* SBSInt+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787E0149266DF596008BBEC1 /* SBSInt+Ext.swift */; };
+		787E014C266DFA10008BBEC1 /* SBSString+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787E014B266DFA10008BBEC1 /* SBSString+Ext.swift */; };
+		787E014F266DFC69008BBEC1 /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787E014E266DFC69008BBEC1 /* CheckBoxView.swift */; };
+		787E0151266DFC73008BBEC1 /* CheckBoxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 787E0150266DFC73008BBEC1 /* CheckBoxView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		787E00C1266DA859008BBEC1 /* SBGold.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SBGold.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		787E00C4266DA859008BBEC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		787E00CD266DA85A008BBEC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		787E00D0266DA85A008BBEC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		787E00D2266DA85A008BBEC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		787E00F5266DA8C1008BBEC1 /* SBSGoldBaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBSGoldBaseVC.swift; sourceTree = "<group>"; };
+		787E00F8266DA8C1008BBEC1 /* SBSViewWithXib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBSViewWithXib.swift; sourceTree = "<group>"; };
+		787E00FB266DA8C1008BBEC1 /* SBSGoldVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBSGoldVC.xib; sourceTree = "<group>"; };
+		787E00FC266DA8C1008BBEC1 /* SBSGoldVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBSGoldVC.swift; sourceTree = "<group>"; };
+		787E00FE266DA8C1008BBEC1 /* SBSGoldItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBSGoldItemCell.swift; sourceTree = "<group>"; };
+		787E00FF266DA8C1008BBEC1 /* SBSGoldItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBSGoldItemCell.xib; sourceTree = "<group>"; };
+		787E0101266DA8C1008BBEC1 /* SBSNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBSNetworking.swift; sourceTree = "<group>"; };
+		787E0103266DA8C1008BBEC1 /* SBSLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBSLog.swift; sourceTree = "<group>"; };
+		787E0104266DA8C1008BBEC1 /* SBSDimentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBSDimentions.swift; sourceTree = "<group>"; };
+		787E0105266DA8C1008BBEC1 /* SBSUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBSUtils.swift; sourceTree = "<group>"; };
+		787E0107266DA8C1008BBEC1 /* SBSBundle+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SBSBundle+Ext.swift"; sourceTree = "<group>"; };
+		787E0108266DA8C1008BBEC1 /* SBSCollectionView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SBSCollectionView+Ext.swift"; sourceTree = "<group>"; };
+		787E0109266DA8C1008BBEC1 /* SBSNSObject+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SBSNSObject+Ext.swift"; sourceTree = "<group>"; };
+		787E010A266DA8C1008BBEC1 /* SBSViewController+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SBSViewController+Ext.swift"; sourceTree = "<group>"; };
+		787E010B266DA8C1008BBEC1 /* SBSUIView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SBSUIView+Ext.swift"; sourceTree = "<group>"; };
+		787E010F266DA8C1008BBEC1 /* SBSNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBSNavigationView.swift; sourceTree = "<group>"; };
+		787E0121266DCA7A008BBEC1 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		787E0125266DCB46008BBEC1 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		787E0127266DCB4A008BBEC1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		787E0128266DCC17008BBEC1 /* LocalizableText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableText.swift; sourceTree = "<group>"; };
+		787E012B266DCF64008BBEC1 /* SBBuyGoldVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBBuyGoldVC.swift; sourceTree = "<group>"; };
+		787E012C266DCF64008BBEC1 /* SBBuyGoldVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SBBuyGoldVC.xib; sourceTree = "<group>"; };
+		787E0132266DDBC7008BBEC1 /* SBSCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBSCoordinator.swift; sourceTree = "<group>"; };
+		787E0135266DE393008BBEC1 /* InputTextView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputTextView.xib; sourceTree = "<group>"; };
+		787E0136266DE393008BBEC1 /* InputTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputTextView.swift; sourceTree = "<group>"; };
+		787E0139266DE403008BBEC1 /* SBSTextField+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SBSTextField+Ext.swift"; sourceTree = "<group>"; };
+		787E013B266DE43F008BBEC1 /* SBSOptional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBSOptional.swift; sourceTree = "<group>"; };
+		787E013E266DEF73008BBEC1 /* SBSInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBSInfoView.swift; sourceTree = "<group>"; };
+		787E0142266DEF95008BBEC1 /* SBSInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SBSInfoView.xib; sourceTree = "<group>"; };
+		787E0144266DF07E008BBEC1 /* SBSNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBSNumberView.swift; sourceTree = "<group>"; };
+		787E0147266DF08E008BBEC1 /* SBSNumberView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SBSNumberView.xib; sourceTree = "<group>"; };
+		787E0149266DF596008BBEC1 /* SBSInt+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SBSInt+Ext.swift"; sourceTree = "<group>"; };
+		787E014B266DFA10008BBEC1 /* SBSString+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SBSString+Ext.swift"; sourceTree = "<group>"; };
+		787E014E266DFC69008BBEC1 /* CheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
+		787E0150266DFC73008BBEC1 /* CheckBoxView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckBoxView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		787E00BE266DA859008BBEC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		787E00B8266DA859008BBEC1 = {
+			isa = PBXGroup;
+			children = (
+				787E00C3266DA859008BBEC1 /* SBGold */,
+				787E00C2266DA859008BBEC1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		787E00C2266DA859008BBEC1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				787E00C1266DA859008BBEC1 /* SBGold.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		787E00C3266DA859008BBEC1 /* SBGold */ = {
+			isa = PBXGroup;
+			children = (
+				787E0131266DDB9E008BBEC1 /* Route */,
+				787E00F4266DA8C1008BBEC1 /* Base */,
+				787E00F6266DA8C1008BBEC1 /* Commons */,
+				787E0106266DA8C1008BBEC1 /* Extensions */,
+				787E0100266DA8C1008BBEC1 /* Networking */,
+				787E0102266DA8C1008BBEC1 /* Uitls */,
+				787E010C266DA8C1008BBEC1 /* Views */,
+				787E00F9266DA8C1008BBEC1 /* UI */,
+				787E00C4266DA859008BBEC1 /* AppDelegate.swift */,
+				787E0126266DCB46008BBEC1 /* Localizable.strings */,
+				787E00CD266DA85A008BBEC1 /* Assets.xcassets */,
+				787E00CF266DA85A008BBEC1 /* LaunchScreen.storyboard */,
+				787E00D2266DA85A008BBEC1 /* Info.plist */,
+			);
+			path = SBGold;
+			sourceTree = "<group>";
+		};
+		787E00F4266DA8C1008BBEC1 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				787E00F5266DA8C1008BBEC1 /* SBSGoldBaseVC.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		787E00F6266DA8C1008BBEC1 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				787E00F7266DA8C1008BBEC1 /* View */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		787E00F7266DA8C1008BBEC1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				787E00F8266DA8C1008BBEC1 /* SBSViewWithXib.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		787E00F9266DA8C1008BBEC1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				787E012A266DCF42008BBEC1 /* SBBuyGold */,
+				787E00FA266DA8C1008BBEC1 /* SBSGold */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		787E00FA266DA8C1008BBEC1 /* SBSGold */ = {
+			isa = PBXGroup;
+			children = (
+				787E00FB266DA8C1008BBEC1 /* SBSGoldVC.xib */,
+				787E00FC266DA8C1008BBEC1 /* SBSGoldVC.swift */,
+				787E00FD266DA8C1008BBEC1 /* Cell */,
+			);
+			path = SBSGold;
+			sourceTree = "<group>";
+		};
+		787E00FD266DA8C1008BBEC1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				787E00FE266DA8C1008BBEC1 /* SBSGoldItemCell.swift */,
+				787E00FF266DA8C1008BBEC1 /* SBSGoldItemCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		787E0100266DA8C1008BBEC1 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				787E0101266DA8C1008BBEC1 /* SBSNetworking.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		787E0102266DA8C1008BBEC1 /* Uitls */ = {
+			isa = PBXGroup;
+			children = (
+				787E0103266DA8C1008BBEC1 /* SBSLog.swift */,
+				787E0104266DA8C1008BBEC1 /* SBSDimentions.swift */,
+				787E0105266DA8C1008BBEC1 /* SBSUtils.swift */,
+				787E0128266DCC17008BBEC1 /* LocalizableText.swift */,
+			);
+			path = Uitls;
+			sourceTree = "<group>";
+		};
+		787E0106266DA8C1008BBEC1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				787E0107266DA8C1008BBEC1 /* SBSBundle+Ext.swift */,
+				787E0108266DA8C1008BBEC1 /* SBSCollectionView+Ext.swift */,
+				787E0109266DA8C1008BBEC1 /* SBSNSObject+Ext.swift */,
+				787E010A266DA8C1008BBEC1 /* SBSViewController+Ext.swift */,
+				787E010B266DA8C1008BBEC1 /* SBSUIView+Ext.swift */,
+				787E0139266DE403008BBEC1 /* SBSTextField+Ext.swift */,
+				787E013B266DE43F008BBEC1 /* SBSOptional.swift */,
+				787E0149266DF596008BBEC1 /* SBSInt+Ext.swift */,
+				787E014B266DFA10008BBEC1 /* SBSString+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		787E010C266DA8C1008BBEC1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				787E014D266DFC2D008BBEC1 /* CheckBox */,
+				787E0146266DF083008BBEC1 /* NumberView */,
+				787E013D266DEF66008BBEC1 /* InfoView */,
+				787E0134266DE387008BBEC1 /* InputText */,
+				787E010D266DA8C1008BBEC1 /* Navigation */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		787E010D266DA8C1008BBEC1 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				787E010F266DA8C1008BBEC1 /* SBSNavigationView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		787E012A266DCF42008BBEC1 /* SBBuyGold */ = {
+			isa = PBXGroup;
+			children = (
+				787E012B266DCF64008BBEC1 /* SBBuyGoldVC.swift */,
+				787E012C266DCF64008BBEC1 /* SBBuyGoldVC.xib */,
+			);
+			path = SBBuyGold;
+			sourceTree = "<group>";
+		};
+		787E0131266DDB9E008BBEC1 /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				787E0132266DDBC7008BBEC1 /* SBSCoordinator.swift */,
+			);
+			path = Route;
+			sourceTree = "<group>";
+		};
+		787E0134266DE387008BBEC1 /* InputText */ = {
+			isa = PBXGroup;
+			children = (
+				787E0136266DE393008BBEC1 /* InputTextView.swift */,
+				787E0135266DE393008BBEC1 /* InputTextView.xib */,
+			);
+			path = InputText;
+			sourceTree = "<group>";
+		};
+		787E013D266DEF66008BBEC1 /* InfoView */ = {
+			isa = PBXGroup;
+			children = (
+				787E013E266DEF73008BBEC1 /* SBSInfoView.swift */,
+				787E0142266DEF95008BBEC1 /* SBSInfoView.xib */,
+			);
+			path = InfoView;
+			sourceTree = "<group>";
+		};
+		787E0146266DF083008BBEC1 /* NumberView */ = {
+			isa = PBXGroup;
+			children = (
+				787E0144266DF07E008BBEC1 /* SBSNumberView.swift */,
+				787E0147266DF08E008BBEC1 /* SBSNumberView.xib */,
+			);
+			path = NumberView;
+			sourceTree = "<group>";
+		};
+		787E014D266DFC2D008BBEC1 /* CheckBox */ = {
+			isa = PBXGroup;
+			children = (
+				787E014E266DFC69008BBEC1 /* CheckBoxView.swift */,
+				787E0150266DFC73008BBEC1 /* CheckBoxView.xib */,
+			);
+			path = CheckBox;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		787E00C0266DA859008BBEC1 /* SBGold */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 787E00D5266DA85A008BBEC1 /* Build configuration list for PBXNativeTarget "SBGold" */;
+			buildPhases = (
+				787E00BD266DA859008BBEC1 /* Sources */,
+				787E00BE266DA859008BBEC1 /* Frameworks */,
+				787E00BF266DA859008BBEC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SBGold;
+			productName = SBGold;
+			productReference = 787E00C1266DA859008BBEC1 /* SBGold.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		787E00B9266DA859008BBEC1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					787E00C0266DA859008BBEC1 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 787E00BC266DA859008BBEC1 /* Build configuration list for PBXProject "SBGold" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				vi,
+			);
+			mainGroup = 787E00B8266DA859008BBEC1;
+			productRefGroup = 787E00C2266DA859008BBEC1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				787E00C0266DA859008BBEC1 /* SBGold */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		787E00BF266DA859008BBEC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				787E0124266DCB46008BBEC1 /* Localizable.strings in Resources */,
+				787E0137266DE393008BBEC1 /* InputTextView.xib in Resources */,
+				787E0112266DA8C1008BBEC1 /* SBSGoldVC.xib in Resources */,
+				787E0151266DFC73008BBEC1 /* CheckBoxView.xib in Resources */,
+				787E0148266DF08E008BBEC1 /* SBSNumberView.xib in Resources */,
+				787E012E266DCF64008BBEC1 /* SBBuyGoldVC.xib in Resources */,
+				787E0115266DA8C1008BBEC1 /* SBSGoldItemCell.xib in Resources */,
+				787E00D1266DA85A008BBEC1 /* LaunchScreen.storyboard in Resources */,
+				787E0143266DEF95008BBEC1 /* SBSInfoView.xib in Resources */,
+				787E00CE266DA85A008BBEC1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		787E00BD266DA859008BBEC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				787E011C266DA8C1008BBEC1 /* SBSNSObject+Ext.swift in Sources */,
+				787E014C266DFA10008BBEC1 /* SBSString+Ext.swift in Sources */,
+				787E011E266DA8C1008BBEC1 /* SBSUIView+Ext.swift in Sources */,
+				787E013A266DE403008BBEC1 /* SBSTextField+Ext.swift in Sources */,
+				787E0138266DE393008BBEC1 /* InputTextView.swift in Sources */,
+				787E0120266DA8C1008BBEC1 /* SBSNavigationView.swift in Sources */,
+				787E0118266DA8C1008BBEC1 /* SBSDimentions.swift in Sources */,
+				787E0145266DF07E008BBEC1 /* SBSNumberView.swift in Sources */,
+				787E0111266DA8C1008BBEC1 /* SBSViewWithXib.swift in Sources */,
+				787E014F266DFC69008BBEC1 /* CheckBoxView.swift in Sources */,
+				787E0133266DDBC7008BBEC1 /* SBSCoordinator.swift in Sources */,
+				787E013C266DE43F008BBEC1 /* SBSOptional.swift in Sources */,
+				787E014A266DF596008BBEC1 /* SBSInt+Ext.swift in Sources */,
+				787E011D266DA8C1008BBEC1 /* SBSViewController+Ext.swift in Sources */,
+				787E011B266DA8C1008BBEC1 /* SBSCollectionView+Ext.swift in Sources */,
+				787E0129266DCC17008BBEC1 /* LocalizableText.swift in Sources */,
+				787E013F266DEF73008BBEC1 /* SBSInfoView.swift in Sources */,
+				787E011A266DA8C1008BBEC1 /* SBSBundle+Ext.swift in Sources */,
+				787E0117266DA8C1008BBEC1 /* SBSLog.swift in Sources */,
+				787E012D266DCF64008BBEC1 /* SBBuyGoldVC.swift in Sources */,
+				787E0113266DA8C1008BBEC1 /* SBSGoldVC.swift in Sources */,
+				787E0116266DA8C1008BBEC1 /* SBSNetworking.swift in Sources */,
+				787E0110266DA8C1008BBEC1 /* SBSGoldBaseVC.swift in Sources */,
+				787E0114266DA8C1008BBEC1 /* SBSGoldItemCell.swift in Sources */,
+				787E0119266DA8C1008BBEC1 /* SBSUtils.swift in Sources */,
+				787E00C5266DA859008BBEC1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		787E00CF266DA85A008BBEC1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				787E00D0266DA85A008BBEC1 /* Base */,
+				787E0121266DCA7A008BBEC1 /* vi */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		787E0126266DCB46008BBEC1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				787E0125266DCB46008BBEC1 /* vi */,
+				787E0127266DCB4A008BBEC1 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		787E00D3266DA85A008BBEC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		787E00D4266DA85A008BBEC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		787E00D6266DA85A008BBEC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SBGold/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sb.SBGold;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		787E00D7266DA85A008BBEC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SBGold/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sb.SBGold;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		787E00BC266DA859008BBEC1 /* Build configuration list for PBXProject "SBGold" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				787E00D3266DA85A008BBEC1 /* Debug */,
+				787E00D4266DA85A008BBEC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		787E00D5266DA85A008BBEC1 /* Build configuration list for PBXNativeTarget "SBGold" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				787E00D6266DA85A008BBEC1 /* Debug */,
+				787E00D7266DA85A008BBEC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 787E00B9266DA859008BBEC1 /* Project object */;
+}

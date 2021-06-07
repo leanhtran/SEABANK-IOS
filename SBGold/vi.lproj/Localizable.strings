@@ -1,0 +1,40 @@
+/* 
+  Localizable.strings
+  SBGold
+
+  Created by Anonymos on 07/06/2021.
+  
+*/
+
+// MARK: GoldVC
+"GoldVC.Navi.Title" = "Vàng miếng 9999";
+"GoldVC.GoldInfo" = "Thông tin vàng";
+"GoldVC.BuyGold" = "Mua vàng";
+
+// MARK: BuyGod
+"BuyGod.NaviTitle" = "Mua vàng";
+"BuyGod.Warning" = "(Lưu ý: Không được phép sử dụng nguồn tiền từ các khoản vay để mua Vàng)";
+"BuyGod.TransactionPlace" = "Nơi gửi/ rút vàng";
+"BuyGod.SelectCity" = "Chọn tỉnh/ thành phố";
+"BuyGod.SelectDistrict" = "Chọn quận/ huyện";
+"BuyGod.SelectTransactionPlace" = "Chọn điểm giao dịch";
+
+"BuyGod.GoldType" = "Loại vàng";
+"BuyGod.SJCGold" = "Vàng JSC";
+"BuyGod.Quantity" = "Số lượng";
+"BuyGod.Price" = "Đơn giá";
+"BuyGod.Amount" = "Thành tiền";
+
+"BuyGod.DeleveryForm" = "Hình thức giao nhận";
+"BuyGod.AppointmentDate" = "Ngày hẹn trả";
+"BuyGod.ReceiveImmediately" = "Đăng ký nhận vàng ngay";
+"BuyGod.ContactNotice" = "SeABank sẽ liên hệ lại với Quý khách trong thời gian sớm nhất nếu  thu xếp được việc giao vàng ngay trong ngày";
+
+"BuyGod.TransactionClassify" = "Phân loại giao dịch";
+"BuyGod.PromotionCode" = "Mã khuyến mại";
+
+"BuyGod.ReferUserInfo" = "Thông tin người giới thiệu (nếu có)";
+"BuyGod.Phone" = "Số điện thoại";
+"BuyGod.CustomerCode" = "Mã khách hàng";
+"BuyGod.ReferUserPhone" = "Nhập số điện thoại người giới thiệu";
+"BuyGod.TransactionDate" = "Ngày giao dịch";

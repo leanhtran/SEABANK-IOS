@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SBSGoldItemCell" id="gTV-IL-0wX" customClass="SBSGoldItemCell" customModule="SBGold" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="222" height="277"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="222" height="277"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="11" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DNr-v3-355">
+                        <rect key="frame" x="0.0" y="0.0" width="222" height="222"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="DNr-v3-355" secondAttribute="height" id="SXl-dv-5dk"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="22" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGW-p8-br0">
+                        <rect key="frame" x="5" y="230" width="212" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="DNr-v3-355" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="5tY-FR-0OK"/>
+                <constraint firstItem="wGW-p8-br0" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="C8N-2k-NZZ"/>
+                <constraint firstAttribute="trailing" secondItem="DNr-v3-355" secondAttribute="trailing" id="EmM-dz-7XZ"/>
+                <constraint firstItem="DNr-v3-355" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="G72-FY-Cph"/>
+                <constraint firstItem="wGW-p8-br0" firstAttribute="top" secondItem="DNr-v3-355" secondAttribute="bottom" constant="8" id="TFw-pc-Tby"/>
+                <constraint firstItem="wGW-p8-br0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="yAU-rP-cYk"/>
+            </constraints>
+            <size key="customSize" width="222" height="277"/>
+            <connections>
+                <outlet property="iconImv" destination="DNr-v3-355" id="z3Q-MS-xNq"/>
+                <outlet property="titleLb" destination="wGW-p8-br0" id="MC9-U8-SIU"/>
+            </connections>
+            <point key="canvasLocation" x="-17" y="101"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
