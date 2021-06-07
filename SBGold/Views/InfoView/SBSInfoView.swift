@@ -6,7 +6,7 @@ final class SBSInfoView: ViewWithXib {
   
   var titleColor: UIColor? {
     didSet {
-      titleLb.textColor = tintColor
+      titleLb.textColor = titleColor
     }
   }
   

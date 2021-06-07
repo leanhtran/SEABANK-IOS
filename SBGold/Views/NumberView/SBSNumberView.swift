@@ -42,6 +42,6 @@ final class SBSNumberView: ViewWithXib {
   }
   
   func setTitle(_ text: String) {
-    
+    titleLb.text = text
   }
 }

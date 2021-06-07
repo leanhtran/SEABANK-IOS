@@ -31,12 +31,12 @@ class SBBuyGoldVC: SBSGoldBaseVC {
   @IBOutlet weak private var promotionView: InputTextView!
   
   @IBOutlet weak private var referUserRadioView: SBSRadioView!
-  
-  
-  
   @IBOutlet weak private var transactionDateView: SBSInfoView!
   @IBOutlet weak private var policyView: SBSCheckBoxView!
   
+  @IBOutlet weak private var referUserView: UIView!
+  @IBOutlet weak private var continueBtn: UIButton!
+  @IBOutlet weak private var referUserTf: UITextField!
   
   private var priceUnit: Int = 0 {
     didSet {
@@ -59,6 +59,7 @@ class SBBuyGoldVC: SBSGoldBaseVC {
   
   override func setupView() {
     containerView.backgroundColor = bgColor
+    view.backgroundColor = bgColor
     setupMultiLanguage()
     setupNavigation()
     setupValueChange()
@@ -75,7 +76,7 @@ class SBBuyGoldVC: SBSGoldBaseVC {
   }
   
   private func setupCommon() {
-    Apply(referUserRadioView!) {
+    Apply(referUserView!) {
       $0.layer.borderWidth = 1
       $0.layer.borderColor = #colorLiteral(red: 0.8117647059, green: 0.8117647059, blue: 0.8117647059, alpha: 1)
       $0.clipsToBounds = true
@@ -118,9 +119,10 @@ class SBBuyGoldVC: SBSGoldBaseVC {
       $0.contentFont = UIFont.boldSystemFont(ofSize: 14)
     }
     Apply(policyView!) {
-      $0.setTitle(Text.localizedString("BuyGod.BuyGod.Policy"))
+      $0.setTitle(Text.localizedString("BuyGod.Policy"))
       $0.setMessage("")
     }
+    continueBtn.setTitle(Text.localizedString("Button.Continue"), for: .normal)
   }
   
   private func setupValueChange() {
@@ -129,9 +131,3 @@ class SBBuyGoldVC: SBSGoldBaseVC {
     }
   }
 }
-
-//"BuyGod.ReferUserInfo" = "Thông tin người giới thiệu (nếu có)";
-//"BuyGod.Phone" = "Số điện thoại";
-//"BuyGod.CustomerCode" = "Mã khách hàng";
-//"BuyGod.ReferUserPhone" = "Nhập số điện thoại người giới thiệu";
-//"BuyGod.TransactionDate" = "Ngày giao dịch";

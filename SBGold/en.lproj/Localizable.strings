@@ -5,6 +5,8 @@
   Created by Anonymos on 07/06/2021.
   
 */
+// MARK: COMMON
+"Button.Continue" = "Tiếp tục";
 
 // MARK: GoldVC
 "GoldVC.Navi.Title" = "Vàng miếng 9999";
