@@ -24,13 +24,16 @@ class SBBuyGoldVC: SBSGoldBaseVC {
   @IBOutlet weak private var priceView: SBSInfoView!
   @IBOutlet weak private var amountView: SBSInfoView!
   
-  @IBOutlet weak var deliveryFormView: InputTextView!
+  @IBOutlet weak private var appointmentDateView: SBSInfoView!
+  @IBOutlet weak private var deliveryFormView: InputTextView!
+  @IBOutlet weak private var goldImmediatelyView: SBSCheckBoxView!
+  @IBOutlet weak private var transactionTypeView: InputTextView!
+  @IBOutlet weak private var promotionView: InputTextView!
   
-  @IBOutlet weak var goldImmediatelyView: CheckBoxView!
+  @IBOutlet weak var referUserRadioView: SBSRadioView!
   
-  @IBOutlet weak var transactionTypeView: InputTextView!
-  
-  @IBOutlet weak var promotionView: InputTextView!
+  @IBOutlet weak var transactionDateView: SBSInfoView!
+  @IBOutlet weak var policyView: SBSCheckBoxView!
   
   
   private var priceUnit: Int = 0 {
@@ -48,6 +51,7 @@ class SBBuyGoldVC: SBSGoldBaseVC {
     super.viewDidLoad()
     priceUnit = 5500000
     quantity = 1
+    appointmentDateView.setTitle(Date().toString(format: "yyyy/MM/dd"))
   }
   
   override func setupView() {
@@ -60,6 +64,15 @@ class SBBuyGoldVC: SBSGoldBaseVC {
   private func setupNavigation() {
     addNavigation(title: Text.localizedString("BuyGod.NaviTitle"))
     navigationView.setRightIcon("ic_info")
+  }
+  
+  override func naviRightAction() {
+    // todo right action
+  }
+  
+  private func setupMultiLanguage() {
+    warningLb.text = Text.localizedString("BuyGod.Warning")
+    transactionPlaceLb.text = Text.localizedString("BuyGod.TransactionPlace")
     cityView.title = Text.localizedString("BuyGod.SelectCity")
     districtView.title = Text.localizedString("BuyGod.SelectDistrict")
     transactionPlaceView.title = Text.localizedString("BuyGod.SelectTransactionPlace")
@@ -70,15 +83,18 @@ class SBBuyGoldVC: SBSGoldBaseVC {
       $0.setTitle(Text.localizedString("BuyGod.GoldType"))
       $0.setContent(Text.localizedString("BuyGod.SJCGold"))
     }
-  }
-  
-  override func naviRightAction() {
-    // todo right action
-  }
-  
-  private func setupMultiLanguage() {
-    warningLb.text = Text.localizedString("BuyGod.Warning")
-    transactionPlaceLb.text = Text.localizedString("BuyGod.TransactionPlace")
+    Apply(appointmentDateView!) {
+      $0.setTitle(Text.localizedString("BuyGod.AppointmentDate"))
+      $0.titleColor = #colorLiteral(red: 0.5725490196, green: 0.5803921569, blue: 0.5921568627, alpha: 1)
+      $0.contentFont = UIFont.boldSystemFont(ofSize: 14)
+    }
+    deliveryFormView.title = Text.localizedString("BuyGod.DeleveryForm")
+    Apply(goldImmediatelyView!) {
+      $0.setTitle(Text.localizedString("BuyGod.ReceiveImmediately"))
+      $0.setMessage(Text.localizedString("BuyGod.ContactNotice"))
+    }
+    transactionTypeView.title = Text.localizedString("BuyGod.TransactionClassify")
+    promotionView.title = Text.localizedString("BuyGod.PromotionCode")
   }
   
   private func setupValueChange() {
@@ -87,3 +103,9 @@ class SBBuyGoldVC: SBSGoldBaseVC {
     }
   }
 }
+
+//"BuyGod.ReferUserInfo" = "Thông tin người giới thiệu (nếu có)";
+//"BuyGod.Phone" = "Số điện thoại";
+//"BuyGod.CustomerCode" = "Mã khách hàng";
+//"BuyGod.ReferUserPhone" = "Nhập số điện thoại người giới thiệu";
+//"BuyGod.TransactionDate" = "Ngày giao dịch";

@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class CheckBoxView: ViewWithXib {
+final class SBSCheckBoxView: ViewWithXib {
   @IBOutlet weak private var checkBtn: UIButton!
   @IBOutlet weak private var titleLb: UILabel!
   @IBOutlet weak private var messageLb: UILabel!
