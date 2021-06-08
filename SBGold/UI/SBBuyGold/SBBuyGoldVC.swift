@@ -65,8 +65,9 @@ class SBBuyGoldVC: SBSGoldBaseVC {
       }
     }
   }
-
+  
   let picker = SBSPickerView()
+  let datePicker = UIDatePicker(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 250))
   
   private var priceUnit: Int = 0 {
     didSet {
@@ -96,6 +97,8 @@ class SBBuyGoldVC: SBSGoldBaseVC {
     setupMultiLanguage()
     setupNavigation()
     setupValueChange()
+    setupPickerView()
+    setupDatePicker()
     setupCommon()
     addObservable(buttons: [continueBtn])
   }
@@ -124,6 +127,9 @@ class SBBuyGoldVC: SBSGoldBaseVC {
         $0.layer.cornerRadius = 5
       }
     })
+  }
+  
+  private func setupPickerView() {
     let scrH = UIScreen.main.bounds.height
     let scrW = UIScreen.main.bounds.width
     Apply(picker) {
@@ -134,6 +140,38 @@ class SBBuyGoldVC: SBSGoldBaseVC {
       }
     }
     view.addSubview(picker)
+  }
+  
+  private func setupDatePicker() {
+    let toolbar = UIToolbar()
+    toolbar.sizeToFit()
+    let doneButton = UIBarButtonItem(title: Text.localizedString("Button.Done"),
+                                     style: .plain,
+                                     target: self,
+                                     action: #selector(donedatePicker))
+    let space = UIBarButtonItem(barButtonSystemItem: .flexibleSpace,
+                                target: nil,
+                                action: nil)
+    toolbar.setItems([space, doneButton], animated: false)
+    dueDateTf.inputAccessoryView = toolbar
+    datePicker.datePickerMode = .date
+    dueDateTf.inputView = datePicker
+    if #available(iOS 13.4, *) {
+      datePicker.preferredDatePickerStyle = .wheels
+    }
+    datePicker.addTarget(self,
+                         action: #selector(datePickerChanged(picker:)),
+                         for: .valueChanged)
+  }
+  
+  @objc
+  private func donedatePicker() {
+    dueDateTf.resignFirstResponder()
+  }
+  
+  @objc
+  private func datePickerChanged(picker: UIDatePicker) {
+    dueDateTf.text = picker.date.toString(format: "yyyy/MM/dd")
   }
   
   private func showPickerView(_ datas: [String]) {

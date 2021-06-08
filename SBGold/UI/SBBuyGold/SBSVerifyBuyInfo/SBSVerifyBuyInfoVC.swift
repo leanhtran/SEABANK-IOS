@@ -8,39 +8,44 @@
 import UIKit
 
 class SBSVerifyBuyInfoVC: SBSGoldBaseVC {
-  @IBOutlet weak private var acountLb: UILabel!
-  @IBOutlet weak private var fullNameLb: UILabel!
-  @IBOutlet weak private var placeLb: UILabel!
-  @IBOutlet weak private var goldTypeLb: UILabel!
-  @IBOutlet weak private var quantityLb: UILabel!
-  @IBOutlet weak private var priceLb: UILabel!
-  @IBOutlet weak private var amountLb: UILabel!
-  @IBOutlet weak private var deleveryLb: UILabel!
-  @IBOutlet weak private var appointmentDateLb: UILabel!
-  @IBOutlet weak private var transactionClassifyLb: UILabel!
-  @IBOutlet weak private var promotionLb: UILabel!
-  @IBOutlet weak private var referUserLb: UILabel!
-  @IBOutlet weak private var transactionDateLb: UILabel!
-  
-  @IBOutlet weak private var acountValueLb: UILabel!
-  @IBOutlet weak private var fullNameValueLb: UILabel!
-  @IBOutlet weak private var placeValueLb: UILabel!
-  @IBOutlet weak private var goldTypeValueLb: UILabel!
-  @IBOutlet weak private var quantityValueLb: UILabel!
-  @IBOutlet weak private var priceValueLb: UILabel!
-  @IBOutlet weak private var amountValueLb: UILabel!
-  @IBOutlet weak private var deleveryValueLb: UILabel!
-  @IBOutlet weak private var appointmentDateValueLb: UILabel!
-  @IBOutlet weak private var transactionClassifyValueLb: UILabel!
-  @IBOutlet weak private var promotionValueLb: UILabel!
-  @IBOutlet weak private var referUserValueLb: UILabel!
-  @IBOutlet weak private var transactionDateValueLb: UILabel!
-  
+  @IBOutlet weak private var tbView: UITableView!
   @IBOutlet weak private var nextBtn: UIButton!
+  
+  struct DataSource {
+    var title: String
+    var value: String
+  }
+  
+  private var datas: [DataSource] = [] {
+    didSet {
+      tbView.reloadData()
+    }
+  }
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    datas.append(DataSource(title: Text.localizedString("BGVI.Account"), value: "A123445667"))
+    datas.append(DataSource(title: Text.localizedString("BGVI.FullName"), value: "NGUYEN VAN A"))
+    datas.append(DataSource(title: Text.localizedString("BGVI.TransactionPlace"), value: "PGD Vạn Xuân - 38 Yết Kiêu - Hoàn Kiếm"))
+    datas.append(DataSource(title: Text.localizedString("BGVI.GoldType"), value: "Vàng JSC"))
+    datas.append(DataSource(title: Text.localizedString("BGVI.Quantity"), value: "2 chỉ"))
+    datas.append(DataSource(title: Text.localizedString("BGVI.Price"), value: "5,500,000 VND"))
+    datas.append(DataSource(title: Text.localizedString("BGVI.Amount"), value: "11,000,000 VND"))
+    
+    datas.append(DataSource(title: Text.localizedString("BGVI.DeleveryForm"), value: "Hẹn trả"))
+    datas.append(DataSource(title: Text.localizedString("BGVI.AppointmentDate"), value: "12/12/2020"))
+    datas.append(DataSource(title: Text.localizedString("BGVI.TransactionClassify"), value: "Mua sắm"))
+    datas.append(DataSource(title: Text.localizedString("BGVI.PromotionCode"), value: "SEABANK1234"))
+    
+    datas.append(DataSource(title: Text.localizedString("BGVI.ReferUserInfo"), value: "0972xxxxxx\nNGUYEN VAN B"))
+    datas.append(DataSource(title: Text.localizedString("BGVI.TransactionDate"), value: "12/12/2020"))
+  }
+  
   override func setupView() {
     addNavigation(title: Text.localizedString("BGVI.NaviTitle"))
     setupMultiLanguage()
     setupCommon()
+    setupTbView()
   }
   
   private func setupCommon() {
@@ -48,24 +53,33 @@ class SBSVerifyBuyInfoVC: SBSGoldBaseVC {
   }
   
   override func didTapButton(_ btn: UIButton) {
-    
+    // TODO next
   }
   
   private func setupMultiLanguage() {
-    acountLb.text = Text.localizedString("BGVI.Account")
-    fullNameLb.text = Text.localizedString("BGVI.FullName")
-    placeLb.text = Text.localizedString("BGVI.TransactionPlace")
-    goldTypeLb.text = Text.localizedString("BGVI.GoldType")
-    quantityLb.text = Text.localizedString("BGVI.Quantity")
-    priceLb.text = Text.localizedString("BGVI.Price")
-    amountLb.text = Text.localizedString("BGVI.Amount")
-    deleveryLb.text = Text.localizedString("BGVI.DeleveryForm")
-    appointmentDateLb.text = Text.localizedString("BGVI.AppointmentDate")
-    transactionClassifyLb.text = Text.localizedString("BGVI.TransactionClassify")
-    promotionLb.text = Text.localizedString("BGVI.PromotionCode")
-    referUserLb.text = Text.localizedString("BGVI.ReferUserInfo")
-    transactionDateLb.text = Text.localizedString("BGVI.TransactionDate")
     nextBtn.setTitle(Text.localizedString("Button.Continue"), for: .normal)
   }
   
+  private func setupTbView() {
+    tbView.register(SBSFormInfoCell.self)
+    tbView.delegate = self
+    tbView.dataSource = self
+  }
+}
+
+extension SBSVerifyBuyInfoVC: UITableViewDelegate, UITableViewDataSource {
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return datas.count
+  }
+  
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let item = datas[indexPath.row]
+    let cell = Init(tbView.dequeue(SBSFormInfoCell.self)) {
+      $0.setTitle(item.title)
+      $0.bindData(item.value)
+      $0.backgroundColor = bgColor
+    }
+    
+    return cell
+  }
 }

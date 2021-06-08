@@ -10,6 +10,8 @@ import UIKit
 enum Route {
   case buyGod
   case buyGodVerify
+  case goldInfo
+  case goldInfoDetail
 }
 
 class BaseCoordinator {
@@ -36,6 +38,10 @@ final class SBSCoordinator: BaseCoordinator {
       push(SBBuyGoldVC())
     case .buyGodVerify:
       push(SBSVerifyBuyInfoVC())
+    case .goldInfo:
+      push(SBSGoldInfoVC())
+    case .goldInfoDetail:
+      push(SBSGoldInfoDetailVC())
     }
   }
 }

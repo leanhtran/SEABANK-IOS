@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		787244E8266F016F00B134C4 /* SBSGoldInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787244E6266F016F00B134C4 /* SBSGoldInfoVC.swift */; };
+		787244E9266F016F00B134C4 /* SBSGoldInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 787244E7266F016F00B134C4 /* SBSGoldInfoVC.xib */; };
+		787244ED266F02F500B134C4 /* SBSGoldInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787244EB266F02F500B134C4 /* SBSGoldInfoCell.swift */; };
+		787244EE266F02F500B134C4 /* SBSGoldInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 787244EC266F02F500B134C4 /* SBSGoldInfoCell.xib */; };
+		787244F1266F0A3800B134C4 /* SBSShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787244F0266F0A3800B134C4 /* SBSShadowView.swift */; };
+		787244F3266F0C4700B134C4 /* SBSGoldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787244F2266F0C4700B134C4 /* SBSGoldTableViewCell.swift */; };
+		787244F5266F0F5F00B134C4 /* SBSTableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787244F4266F0F5F00B134C4 /* SBSTableView+Ext.swift */; };
+		787244F8266F109C00B134C4 /* SBSGoldInfoHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787244F7266F109C00B134C4 /* SBSGoldInfoHeader.swift */; };
+		787244FA266F10A500B134C4 /* SBSGoldInfoHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 787244F9266F10A500B134C4 /* SBSGoldInfoHeader.xib */; };
+		787244FD266F12B400B134C4 /* SBSGold.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787244FC266F12B400B134C4 /* SBSGold.swift */; };
+		787244FF266F146500B134C4 /* SBSArray+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787244FE266F146500B134C4 /* SBSArray+Ext.swift */; };
+		78724502266F193000B134C4 /* SBSGoldInfoFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78724501266F193000B134C4 /* SBSGoldInfoFooter.swift */; };
+		78724504266F194800B134C4 /* SBSGoldInfoFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78724503266F194800B134C4 /* SBSGoldInfoFooter.xib */; };
+		78724508266F1BCC00B134C4 /* SBSGoldInfoDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78724506266F1BCC00B134C4 /* SBSGoldInfoDetailVC.swift */; };
+		78724509266F1BCC00B134C4 /* SBSGoldInfoDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78724507266F1BCC00B134C4 /* SBSGoldInfoDetailVC.xib */; };
+		7872450E266F265800B134C4 /* SBSFormInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7872450C266F265800B134C4 /* SBSFormInfoCell.swift */; };
+		7872450F266F265800B134C4 /* SBSFormInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7872450D266F265800B134C4 /* SBSFormInfoCell.xib */; };
+		78724511266F2A3D00B134C4 /* SBSGoldInfoDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78724510266F2A3D00B134C4 /* SBSGoldInfoDetailVM.swift */; };
+		78724514266F305E00B134C4 /* SBSShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78724513266F305E00B134C4 /* SBSShadowButton.swift */; };
 		787E00C5266DA859008BBEC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787E00C4266DA859008BBEC1 /* AppDelegate.swift */; };
 		787E00CE266DA85A008BBEC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 787E00CD266DA85A008BBEC1 /* Assets.xcassets */; };
 		787E00D1266DA85A008BBEC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 787E00CF266DA85A008BBEC1 /* LaunchScreen.storyboard */; };
@@ -53,6 +72,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		787244E6266F016F00B134C4 /* SBSGoldInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBSGoldInfoVC.swift; sourceTree = "<group>"; };
+		787244E7266F016F00B134C4 /* SBSGoldInfoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SBSGoldInfoVC.xib; sourceTree = "<group>"; };
+		787244EB266F02F500B134C4 /* SBSGoldInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBSGoldInfoCell.swift; sourceTree = "<group>"; };
+		787244EC266F02F500B134C4 /* SBSGoldInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SBSGoldInfoCell.xib; sourceTree = "<group>"; };
+		787244F0266F0A3800B134C4 /* SBSShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBSShadowView.swift; sourceTree = "<group>"; };
+		787244F2266F0C4700B134C4 /* SBSGoldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBSGoldTableViewCell.swift; sourceTree = "<group>"; };
+		787244F4266F0F5F00B134C4 /* SBSTableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SBSTableView+Ext.swift"; sourceTree = "<group>"; };
+		787244F7266F109C00B134C4 /* SBSGoldInfoHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBSGoldInfoHeader.swift; sourceTree = "<group>"; };
+		787244F9266F10A500B134C4 /* SBSGoldInfoHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SBSGoldInfoHeader.xib; sourceTree = "<group>"; };
+		787244FC266F12B400B134C4 /* SBSGold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBSGold.swift; sourceTree = "<group>"; };
+		787244FE266F146500B134C4 /* SBSArray+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SBSArray+Ext.swift"; sourceTree = "<group>"; };
+		78724501266F193000B134C4 /* SBSGoldInfoFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBSGoldInfoFooter.swift; sourceTree = "<group>"; };
+		78724503266F194800B134C4 /* SBSGoldInfoFooter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SBSGoldInfoFooter.xib; sourceTree = "<group>"; };
+		78724506266F1BCC00B134C4 /* SBSGoldInfoDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBSGoldInfoDetailVC.swift; sourceTree = "<group>"; };
+		78724507266F1BCC00B134C4 /* SBSGoldInfoDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SBSGoldInfoDetailVC.xib; sourceTree = "<group>"; };
+		7872450C266F265800B134C4 /* SBSFormInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBSFormInfoCell.swift; sourceTree = "<group>"; };
+		7872450D266F265800B134C4 /* SBSFormInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SBSFormInfoCell.xib; sourceTree = "<group>"; };
+		78724510266F2A3D00B134C4 /* SBSGoldInfoDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBSGoldInfoDetailVM.swift; sourceTree = "<group>"; };
+		78724513266F305E00B134C4 /* SBSShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBSShadowButton.swift; sourceTree = "<group>"; };
 		787E00C1266DA859008BBEC1 /* SBGold.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SBGold.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		787E00C4266DA859008BBEC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		787E00CD266DA85A008BBEC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -113,6 +151,89 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		787244E5266EFF6300B134C4 /* SBGoldInfo */ = {
+			isa = PBXGroup;
+			children = (
+				78724505266F1BB200B134C4 /* SBSGoldInfoDetail */,
+				78724500266F191C00B134C4 /* Footer */,
+				787244F6266F108B00B134C4 /* Header */,
+				787244EA266F02D900B134C4 /* Cells */,
+				787244E6266F016F00B134C4 /* SBSGoldInfoVC.swift */,
+				787244E7266F016F00B134C4 /* SBSGoldInfoVC.xib */,
+			);
+			path = SBGoldInfo;
+			sourceTree = "<group>";
+		};
+		787244EA266F02D900B134C4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				787244EB266F02F500B134C4 /* SBSGoldInfoCell.swift */,
+				787244EC266F02F500B134C4 /* SBSGoldInfoCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		787244EF266F0A2A00B134C4 /* ShadowView */ = {
+			isa = PBXGroup;
+			children = (
+				787244F0266F0A3800B134C4 /* SBSShadowView.swift */,
+			);
+			path = ShadowView;
+			sourceTree = "<group>";
+		};
+		787244F6266F108B00B134C4 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				787244F7266F109C00B134C4 /* SBSGoldInfoHeader.swift */,
+				787244F9266F10A500B134C4 /* SBSGoldInfoHeader.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		787244FB266F129A00B134C4 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				787244FC266F12B400B134C4 /* SBSGold.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		78724500266F191C00B134C4 /* Footer */ = {
+			isa = PBXGroup;
+			children = (
+				78724501266F193000B134C4 /* SBSGoldInfoFooter.swift */,
+				78724503266F194800B134C4 /* SBSGoldInfoFooter.xib */,
+			);
+			path = Footer;
+			sourceTree = "<group>";
+		};
+		78724505266F1BB200B134C4 /* SBSGoldInfoDetail */ = {
+			isa = PBXGroup;
+			children = (
+				78724506266F1BCC00B134C4 /* SBSGoldInfoDetailVC.swift */,
+				78724507266F1BCC00B134C4 /* SBSGoldInfoDetailVC.xib */,
+				78724510266F2A3D00B134C4 /* SBSGoldInfoDetailVM.swift */,
+			);
+			path = SBSGoldInfoDetail;
+			sourceTree = "<group>";
+		};
+		7872450B266F261D00B134C4 /* FormInfoCell */ = {
+			isa = PBXGroup;
+			children = (
+				7872450C266F265800B134C4 /* SBSFormInfoCell.swift */,
+				7872450D266F265800B134C4 /* SBSFormInfoCell.xib */,
+			);
+			path = FormInfoCell;
+			sourceTree = "<group>";
+		};
+		78724512266F304D00B134C4 /* ShadowButton */ = {
+			isa = PBXGroup;
+			children = (
+				78724513266F305E00B134C4 /* SBSShadowButton.swift */,
+			);
+			path = ShadowButton;
+			sourceTree = "<group>";
+		};
 		787E00B8266DA859008BBEC1 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +253,7 @@
 		787E00C3266DA859008BBEC1 /* SBGold */ = {
 			isa = PBXGroup;
 			children = (
+				787244FB266F129A00B134C4 /* Entities */,
 				787E0131266DDB9E008BBEC1 /* Route */,
 				787E00F4266DA8C1008BBEC1 /* Base */,
 				787E00F6266DA8C1008BBEC1 /* Commons */,
@@ -153,6 +275,7 @@
 			isa = PBXGroup;
 			children = (
 				787E00F5266DA8C1008BBEC1 /* SBSGoldBaseVC.swift */,
+				787244F2266F0C4700B134C4 /* SBSGoldTableViewCell.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -176,6 +299,7 @@
 		787E00F9266DA8C1008BBEC1 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				787244E5266EFF6300B134C4 /* SBGoldInfo */,
 				787E012A266DCF42008BBEC1 /* SBBuyGold */,
 				787E00FA266DA8C1008BBEC1 /* SBSGold */,
 			);
@@ -233,6 +357,8 @@
 				787E0149266DF596008BBEC1 /* SBSInt+Ext.swift */,
 				787E014B266DFA10008BBEC1 /* SBSString+Ext.swift */,
 				7970D34F266E40CB004C4344 /* SBSDate+Ext.swift */,
+				787244F4266F0F5F00B134C4 /* SBSTableView+Ext.swift */,
+				787244FE266F146500B134C4 /* SBSArray+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -240,6 +366,9 @@
 		787E010C266DA8C1008BBEC1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				78724512266F304D00B134C4 /* ShadowButton */,
+				7872450B266F261D00B134C4 /* FormInfoCell */,
+				787244EF266F0A2A00B134C4 /* ShadowView */,
 				7970D356266E5711004C4344 /* PickerView */,
 				787E0156266E19F6008BBEC1 /* RadioView */,
 				787E014D266DFC2D008BBEC1 /* CheckBox */,
@@ -400,11 +529,17 @@
 			files = (
 				787E0124266DCB46008BBEC1 /* Localizable.strings in Resources */,
 				787E0137266DE393008BBEC1 /* InputTextView.xib in Resources */,
+				78724509266F1BCC00B134C4 /* SBSGoldInfoDetailVC.xib in Resources */,
 				787E0112266DA8C1008BBEC1 /* SBSGoldVC.xib in Resources */,
 				787E0148266DF08E008BBEC1 /* SBSNumberView.xib in Resources */,
+				787244EE266F02F500B134C4 /* SBSGoldInfoCell.xib in Resources */,
 				787E012E266DCF64008BBEC1 /* SBBuyGoldVC.xib in Resources */,
 				787E0115266DA8C1008BBEC1 /* SBSGoldItemCell.xib in Resources */,
 				787E00D1266DA85A008BBEC1 /* LaunchScreen.storyboard in Resources */,
+				787244E9266F016F00B134C4 /* SBSGoldInfoVC.xib in Resources */,
+				787244FA266F10A500B134C4 /* SBSGoldInfoHeader.xib in Resources */,
+				78724504266F194800B134C4 /* SBSGoldInfoFooter.xib in Resources */,
+				7872450F266F265800B134C4 /* SBSFormInfoCell.xib in Resources */,
 				792053FB266E3DD2005467C7 /* SBSRadioView.xib in Resources */,
 				7970D354266E4776004C4344 /* SBSCheckBoxView.xib in Resources */,
 				7970D366266E69AD004C4344 /* SBSVerifyBuyInfoVC.xib in Resources */,
@@ -425,25 +560,38 @@
 				787E014C266DFA10008BBEC1 /* SBSString+Ext.swift in Sources */,
 				787E011E266DA8C1008BBEC1 /* SBSUIView+Ext.swift in Sources */,
 				7970D358266E5722004C4344 /* SBSPickerView.swift in Sources */,
+				787244F5266F0F5F00B134C4 /* SBSTableView+Ext.swift in Sources */,
+				787244F8266F109C00B134C4 /* SBSGoldInfoHeader.swift in Sources */,
 				787E013A266DE403008BBEC1 /* SBSTextField+Ext.swift in Sources */,
 				787E0138266DE393008BBEC1 /* InputTextView.swift in Sources */,
 				787E0120266DA8C1008BBEC1 /* SBSNavigationView.swift in Sources */,
 				787E0118266DA8C1008BBEC1 /* SBSDimentions.swift in Sources */,
 				787E0145266DF07E008BBEC1 /* SBSNumberView.swift in Sources */,
 				787E0111266DA8C1008BBEC1 /* SBSViewWithXib.swift in Sources */,
+				787244ED266F02F500B134C4 /* SBSGoldInfoCell.swift in Sources */,
 				787E014F266DFC69008BBEC1 /* SBSCheckBoxView.swift in Sources */,
+				787244F1266F0A3800B134C4 /* SBSShadowView.swift in Sources */,
+				787244E8266F016F00B134C4 /* SBSGoldInfoVC.swift in Sources */,
 				787E0133266DDBC7008BBEC1 /* SBSCoordinator.swift in Sources */,
 				787E013C266DE43F008BBEC1 /* SBSOptional.swift in Sources */,
 				787E014A266DF596008BBEC1 /* SBSInt+Ext.swift in Sources */,
+				787244FD266F12B400B134C4 /* SBSGold.swift in Sources */,
 				787E011D266DA8C1008BBEC1 /* SBSViewController+Ext.swift in Sources */,
 				7970D350266E40CB004C4344 /* SBSDate+Ext.swift in Sources */,
+				78724514266F305E00B134C4 /* SBSShadowButton.swift in Sources */,
 				787E011B266DA8C1008BBEC1 /* SBSCollectionView+Ext.swift in Sources */,
+				7872450E266F265800B134C4 /* SBSFormInfoCell.swift in Sources */,
+				787244F3266F0C4700B134C4 /* SBSGoldTableViewCell.swift in Sources */,
 				787E0129266DCC17008BBEC1 /* LocalizableText.swift in Sources */,
+				78724511266F2A3D00B134C4 /* SBSGoldInfoDetailVM.swift in Sources */,
 				787E013F266DEF73008BBEC1 /* SBSInfoView.swift in Sources */,
+				78724508266F1BCC00B134C4 /* SBSGoldInfoDetailVC.swift in Sources */,
 				787E011A266DA8C1008BBEC1 /* SBSBundle+Ext.swift in Sources */,
 				787E0117266DA8C1008BBEC1 /* SBSLog.swift in Sources */,
 				7970D365266E69AD004C4344 /* SBSVerifyBuyInfoVC.swift in Sources */,
 				787E012D266DCF64008BBEC1 /* SBBuyGoldVC.swift in Sources */,
+				787244FF266F146500B134C4 /* SBSArray+Ext.swift in Sources */,
+				78724502266F193000B134C4 /* SBSGoldInfoFooter.swift in Sources */,
 				787E0113266DA8C1008BBEC1 /* SBSGoldVC.swift in Sources */,
 				787E0116266DA8C1008BBEC1 /* SBSNetworking.swift in Sources */,
 				792053F8266E3DC9005467C7 /* SBSRadioView.swift in Sources */,

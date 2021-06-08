@@ -40,4 +40,15 @@ extension UIView {
       }
     }
   }
+  
+  func roundingCorners(radius: CGFloat, corners: UIRectCorner, color: UIColor? = .white) {
+    let path = UIBezierPath(roundedRect: self.bounds,
+                            byRoundingCorners: corners,
+                            cornerRadii: CGSize(width: radius, height: radius))
+    let maskLayer = CAShapeLayer()
+    maskLayer.frame = bounds
+    maskLayer.path = path.cgPath
+    layer.mask = maskLayer
+    backgroundColor = color
+  }
 }

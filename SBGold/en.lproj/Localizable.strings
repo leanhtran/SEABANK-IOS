@@ -7,6 +7,7 @@
 */
 // MARK: COMMON
 "Button.Continue" = "Tiếp tục";
+"Button.Done" = "Xong";
 
 // MARK: GoldVC
 "GoldVC.Navi.Title" = "Vàng miếng 9999";
@@ -65,3 +66,39 @@
 "BGVI.PromotionCode" = "Mã khuyến mại";
 "BGVI.ReferUserInfo" = "Người giới thiệu";
 "BGVI.TransactionDate" = "Ngày giao dịch";
+
+// MARK: GoldInfo
+"GoldInfo.NaviTitle" = "Thông tin vàng";
+"GoldInfo.Menu.All" = "Tất cả";
+"GoldInfo.Menu.Online" = "Online";
+"GoldInfo.Menu.Counter" = "Tại quầy";
+"GoldInfo.TotalGoldCounter" = "Tổng vàng gửi tại quầy";
+"GoldInfo.TotalGoldOnline" = "Tổng vàng gửi online";
+"GoldInfo.TotalGold" = "Tổng vàng";
+
+"GoldInfo.GoldType" = "Loại vàng";
+"GoldInfo.ContractNumber" = "Số hợp đồng";
+"GoldInfo.DeliveryForm" = "Hình thức giao nhận";
+"GoldInfo.BuyDate" = "Ngày mua";
+"GoldInfo.DueDate" = "Ngày đến hạn";
+"GoldInfo.Quantity" = "Số chỉ";
+
+// MARK: GoldInfoDetail
+"GoldInfoDetail.NaviTitle" = "Thông tin chi tiết";
+"GoldInfoDetail.DepositForm" = "Hình thức mua";
+"GoldInfoDetail.StorageForm" = "Loại giữ hộ";
+"GoldInfoDetail.ContractNumber" = "Số hợp đồng";
+"GoldInfoDetail.GoldType" = "Loại vàng";
+"GoldInfoDetail.Quantity" = "Số lượng";
+"GoldInfoDetail.DeliveryForm" = "Hình thức giao nhận";
+"GoldInfoDetail.BuyDate" = "Ngày mua";
+"GoldInfoDetail.AppointmentDate" = "Ngày hẹn trả";
+"GoldInfoDetail.TransactionPlace" = "Nơi gửi/ rút vàng";
+
+"GoldInfoDetail.PayableFee" = "Phí còn phải trả";
+"GoldInfoDetail.DueDate" = "Ngày đến hạn";
+"GoldInfoDetail.Period" = "Kỳ hạn";
+
+"GoldInfoDetail.WithDrawal" = "Đăng ký rút";
+"GoldInfoDetail.BuyGold" = "Bán vàng";
+"GoldInfoDetail.ViewContract" = "Xem hợp đồng";

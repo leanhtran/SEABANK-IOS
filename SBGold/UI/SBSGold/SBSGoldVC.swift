@@ -32,6 +32,7 @@ open class SBSGoldVC: SBSGoldBaseVC {
     collectionView.register(SBSGoldItemCell.self)
     collectionView.delegate = self
     collectionView.dataSource = self
+    view.backgroundColor = bgColor
   }
   
   open override func viewWillAppear(_ animated: Bool) {
@@ -55,7 +56,7 @@ extension SBSGoldVC: UICollectionViewDelegate, UICollectionViewDataSource {
   public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let item = items[indexPath.row]
     let cell = collectionView.dequeue(SBSGoldItemCell.self, indexPath: indexPath)
-    cell.bindData("ic_", title: item.title)
+    cell.bindData("ic_gold_menu", title: item.title)
     return cell
   }
   
@@ -65,7 +66,7 @@ extension SBSGoldVC: UICollectionViewDelegate, UICollectionViewDataSource {
     case .buyGold:
       SBSCoordinator.shared.moveTo(Route.buyGod)
     case .goldInfo:
-      break
+      SBSCoordinator.shared.moveTo(Route.goldInfo)
     }
   }
 }
