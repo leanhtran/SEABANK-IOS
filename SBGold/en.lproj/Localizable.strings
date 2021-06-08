@@ -8,6 +8,7 @@
 // MARK: COMMON
 "Button.Continue" = "Tiếp tục";
 "Button.Done" = "Xong";
+"Button.OtherTransaction" = "Giao dịch khác";
 
 // MARK: GoldVC
 "GoldVC.Navi.Title" = "Vàng miếng 9999";
@@ -104,6 +105,7 @@
 "GoldInfoDetail.ViewContract" = "Xem hợp đồng";
 
 // MARK: GoldWithdraw
+"GoldWithdraw.Confirm" = "Xác nhận thông tin";
 "GoldWithdraw.Register" = "Đăng ký rút";
 "GoldWithdraw.Place" = "Nơi rút";
 "GoldWithdraw.SelectCity" = "Chọn tỉnh/ thành phố";
@@ -113,3 +115,4 @@
 "GoldWithdraw.WithdrawFee" = "Phí rút vàng dự kiến";
 "GoldWithdraw.WithdrawInfo" = "Thu khi Quý khách đến rút vàng";
 "GoldWithdraw.WithdrawNotice" = "Lưu ý: tại ngày đăng ký rút, nếu Quý khách không đến điểm giao dịch của SeABank để thực hiện, thông tin đăng ký rút Vàng của Quý khách sẽ bị hủy và cập nhật lại theo thông tin đăng ký lần đầu";
+"GoldWithdraw.WithdrawSuccess" = "Đăng ký rút Vàng thành công";

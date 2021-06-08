@@ -1,13 +1,15 @@
 //
-//  SBGoldWithdrawConfirmVC.swift
+//  SBGoldWithdrawSuccessVC.swift
 //  SBGold
 //
-//  Created by Anonymos on 08/06/2021.
+//  Created by Anonymos on 2021/06/08.
 //
 
 import UIKit
 
-class SBGoldWithdrawConfirmVC: SBSGoldBaseVC {
+class SBGoldWithdrawSuccessVC: SBSGoldBaseVC {
+  
+  @IBOutlet weak private var successLb: UILabel!
   @IBOutlet weak private var placeLb: UILabel!
   @IBOutlet weak private var dateLb: UILabel!
   @IBOutlet weak private var feeLb: UILabel!
@@ -36,14 +38,19 @@ class SBGoldWithdrawConfirmVC: SBSGoldBaseVC {
   }
   
   private func setupMultiLanguage() {
+    successLb.text = Text.localizedString("GoldWithdraw.WithdrawSuccess")
     placeLb.text = Text.localizedString("GoldWithdraw.Place")
     dateLb.text = Text.localizedString("GoldWithdraw.WithdrawDate")
     feeLb.text = Text.localizedString("GoldWithdraw.WithdrawFee")
     feeInfoLb.text = Text.localizedString("GoldWithdraw.WithdrawInfo")
-    nextBtn.setTitle(Text.localizedString("Button.Continue"), for: .normal)
+    nextBtn.setTitle(Text.localizedString("Button.OtherTransaction"), for: .normal)
   }
   
   override func didTapButton(_ btn: UIButton) {
-    SBSCoordinator.shared.moveTo(Route.withdrawSuccess)
+    if let vc = navigationController?.viewControllers.first(where: { $0.isKind(of: SBSGoldVC.self )}) {
+      navigationController?.popToViewController(vc, animated: true)
+    } else {
+      navigationController?.popToRootViewController(animated: true)
+    }
   }
 }

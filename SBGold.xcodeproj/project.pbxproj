@@ -73,6 +73,8 @@
 		7970D360266E5EEF004C4344 /* SBSPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7970D35F266E5EEF004C4344 /* SBSPickerView.xib */; };
 		7970D365266E69AD004C4344 /* SBSVerifyBuyInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7970D363266E69AD004C4344 /* SBSVerifyBuyInfoVC.swift */; };
 		7970D366266E69AD004C4344 /* SBSVerifyBuyInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7970D364266E69AD004C4344 /* SBSVerifyBuyInfoVC.xib */; };
+		79BB0D43266FB0DA00F43916 /* SBGoldWithdrawSuccessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BB0D41266FB0DA00F43916 /* SBGoldWithdrawSuccessVC.swift */; };
+		79BB0D44266FB0DA00F43916 /* SBGoldWithdrawSuccessVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79BB0D42266FB0DA00F43916 /* SBGoldWithdrawSuccessVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -146,6 +148,8 @@
 		7970D35F266E5EEF004C4344 /* SBSPickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SBSPickerView.xib; sourceTree = "<group>"; };
 		7970D363266E69AD004C4344 /* SBSVerifyBuyInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBSVerifyBuyInfoVC.swift; sourceTree = "<group>"; };
 		7970D364266E69AD004C4344 /* SBSVerifyBuyInfoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SBSVerifyBuyInfoVC.xib; sourceTree = "<group>"; };
+		79BB0D41266FB0DA00F43916 /* SBGoldWithdrawSuccessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBGoldWithdrawSuccessVC.swift; sourceTree = "<group>"; };
+		79BB0D42266FB0DA00F43916 /* SBGoldWithdrawSuccessVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SBGoldWithdrawSuccessVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +249,7 @@
 		78724515266F4AA400B134C4 /* SBGoldWithdraw */ = {
 			isa = PBXGroup;
 			children = (
+				79BB0D40266FB0BC00F43916 /* SBGoldWithdrawSuccessVC */,
 				787CD881266F77C90016D3EB /* SBGoldWithdrawConfirmVC */,
 				78724516266F63AF00B134C4 /* SBSGodWithdrawVC.swift */,
 				78724517266F63AF00B134C4 /* SBSGodWithdrawVC.xib */,
@@ -497,6 +502,15 @@
 			path = SBSVerifyBuyInfo;
 			sourceTree = "<group>";
 		};
+		79BB0D40266FB0BC00F43916 /* SBGoldWithdrawSuccessVC */ = {
+			isa = PBXGroup;
+			children = (
+				79BB0D41266FB0DA00F43916 /* SBGoldWithdrawSuccessVC.swift */,
+				79BB0D42266FB0DA00F43916 /* SBGoldWithdrawSuccessVC.xib */,
+			);
+			path = SBGoldWithdrawSuccessVC;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -574,6 +588,7 @@
 				7970D366266E69AD004C4344 /* SBSVerifyBuyInfoVC.xib in Resources */,
 				787E0143266DEF95008BBEC1 /* SBSInfoView.xib in Resources */,
 				787E00CE266DA85A008BBEC1 /* Assets.xcassets in Resources */,
+				79BB0D44266FB0DA00F43916 /* SBGoldWithdrawSuccessVC.xib in Resources */,
 				7970D360266E5EEF004C4344 /* SBSPickerView.xib in Resources */,
 				787CD880266F77C50016D3EB /* SBGoldWithdrawConfirmVC.xib in Resources */,
 			);
@@ -587,6 +602,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				787E011C266DA8C1008BBEC1 /* SBSNSObject+Ext.swift in Sources */,
+				79BB0D43266FB0DA00F43916 /* SBGoldWithdrawSuccessVC.swift in Sources */,
 				787E014C266DFA10008BBEC1 /* SBSString+Ext.swift in Sources */,
 				787E011E266DA8C1008BBEC1 /* SBSUIView+Ext.swift in Sources */,
 				7970D358266E5722004C4344 /* SBSPickerView.swift in Sources */,

@@ -23,8 +23,13 @@ class SBSNavigationView: UIView {
     super.init(frame: frame)
     shapeLayer = CAShapeLayer()
     shapeLayer.fillColor = mainColor.cgColor
+    shapeLayer.shadowRadius = 3.0
+    shapeLayer.shadowColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.5)
+    shapeLayer.shadowOpacity = 0.5
+    shapeLayer.shadowOffset = CGSize(width: -2, height: 4)
+    
     layer.addSublayer(shapeLayer)
-    shapeLayer.frame = CGRect(x: 0, y: 0, width: 300, height: 200)
+    shapeLayer.frame = CGRect(x: 0, y: 0, width: 300, height: 70)
     
     let scrW = UIScreen.main.bounds.width
     
