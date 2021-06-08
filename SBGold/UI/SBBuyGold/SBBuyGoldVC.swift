@@ -89,8 +89,8 @@ class SBBuyGoldVC: SBSGoldBaseVC {
     super.viewDidLoad()
     priceUnit = 5500000
     quantity = 1
-    appointmentDateView.setContent(Date().toString(format: "yyyy/MM/dd"))
-    transactionDateView.setContent(Date().toString(format: "yyyy/MM/dd"))
+    appointmentDateView.setContent(Date().toString(format: "dd/MM/yyyy"))
+    transactionDateView.setContent(Date().toString(format: "dd/MM/yyyy"))
   }
   
   override func setupView() {
@@ -171,7 +171,7 @@ class SBBuyGoldVC: SBSGoldBaseVC {
   
   @objc
   private func datePickerChanged(picker: UIDatePicker) {
-    dueDateTf.text = picker.date.toString(format: "yyyy/MM/dd")
+    dueDateTf.text = picker.date.toString(format: "dd/MM/yyyy")
   }
   
   private func showPickerView(_ datas: [String]) {

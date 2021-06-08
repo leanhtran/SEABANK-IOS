@@ -26,6 +26,10 @@
 		7872450F266F265800B134C4 /* SBSFormInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7872450D266F265800B134C4 /* SBSFormInfoCell.xib */; };
 		78724511266F2A3D00B134C4 /* SBSGoldInfoDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78724510266F2A3D00B134C4 /* SBSGoldInfoDetailVM.swift */; };
 		78724514266F305E00B134C4 /* SBSShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78724513266F305E00B134C4 /* SBSShadowButton.swift */; };
+		78724518266F63AF00B134C4 /* SBSGodWithdrawVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78724516266F63AF00B134C4 /* SBSGodWithdrawVC.swift */; };
+		78724519266F63AF00B134C4 /* SBSGodWithdrawVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78724517266F63AF00B134C4 /* SBSGodWithdrawVC.xib */; };
+		787CD87F266F77C50016D3EB /* SBGoldWithdrawConfirmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787CD87D266F77C50016D3EB /* SBGoldWithdrawConfirmVC.swift */; };
+		787CD880266F77C50016D3EB /* SBGoldWithdrawConfirmVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 787CD87E266F77C50016D3EB /* SBGoldWithdrawConfirmVC.xib */; };
 		787E00C5266DA859008BBEC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787E00C4266DA859008BBEC1 /* AppDelegate.swift */; };
 		787E00CE266DA85A008BBEC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 787E00CD266DA85A008BBEC1 /* Assets.xcassets */; };
 		787E00D1266DA85A008BBEC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 787E00CF266DA85A008BBEC1 /* LaunchScreen.storyboard */; };
@@ -91,6 +95,10 @@
 		7872450D266F265800B134C4 /* SBSFormInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SBSFormInfoCell.xib; sourceTree = "<group>"; };
 		78724510266F2A3D00B134C4 /* SBSGoldInfoDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBSGoldInfoDetailVM.swift; sourceTree = "<group>"; };
 		78724513266F305E00B134C4 /* SBSShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBSShadowButton.swift; sourceTree = "<group>"; };
+		78724516266F63AF00B134C4 /* SBSGodWithdrawVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBSGodWithdrawVC.swift; sourceTree = "<group>"; };
+		78724517266F63AF00B134C4 /* SBSGodWithdrawVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SBSGodWithdrawVC.xib; sourceTree = "<group>"; };
+		787CD87D266F77C50016D3EB /* SBGoldWithdrawConfirmVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBGoldWithdrawConfirmVC.swift; sourceTree = "<group>"; };
+		787CD87E266F77C50016D3EB /* SBGoldWithdrawConfirmVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SBGoldWithdrawConfirmVC.xib; sourceTree = "<group>"; };
 		787E00C1266DA859008BBEC1 /* SBGold.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SBGold.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		787E00C4266DA859008BBEC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		787E00CD266DA85A008BBEC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -234,6 +242,25 @@
 			path = ShadowButton;
 			sourceTree = "<group>";
 		};
+		78724515266F4AA400B134C4 /* SBGoldWithdraw */ = {
+			isa = PBXGroup;
+			children = (
+				787CD881266F77C90016D3EB /* SBGoldWithdrawConfirmVC */,
+				78724516266F63AF00B134C4 /* SBSGodWithdrawVC.swift */,
+				78724517266F63AF00B134C4 /* SBSGodWithdrawVC.xib */,
+			);
+			path = SBGoldWithdraw;
+			sourceTree = "<group>";
+		};
+		787CD881266F77C90016D3EB /* SBGoldWithdrawConfirmVC */ = {
+			isa = PBXGroup;
+			children = (
+				787CD87D266F77C50016D3EB /* SBGoldWithdrawConfirmVC.swift */,
+				787CD87E266F77C50016D3EB /* SBGoldWithdrawConfirmVC.xib */,
+			);
+			path = SBGoldWithdrawConfirmVC;
+			sourceTree = "<group>";
+		};
 		787E00B8266DA859008BBEC1 = {
 			isa = PBXGroup;
 			children = (
@@ -299,6 +326,7 @@
 		787E00F9266DA8C1008BBEC1 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				78724515266F4AA400B134C4 /* SBGoldWithdraw */,
 				787244E5266EFF6300B134C4 /* SBGoldInfo */,
 				787E012A266DCF42008BBEC1 /* SBBuyGold */,
 				787E00FA266DA8C1008BBEC1 /* SBSGold */,
@@ -541,11 +569,13 @@
 				78724504266F194800B134C4 /* SBSGoldInfoFooter.xib in Resources */,
 				7872450F266F265800B134C4 /* SBSFormInfoCell.xib in Resources */,
 				792053FB266E3DD2005467C7 /* SBSRadioView.xib in Resources */,
+				78724519266F63AF00B134C4 /* SBSGodWithdrawVC.xib in Resources */,
 				7970D354266E4776004C4344 /* SBSCheckBoxView.xib in Resources */,
 				7970D366266E69AD004C4344 /* SBSVerifyBuyInfoVC.xib in Resources */,
 				787E0143266DEF95008BBEC1 /* SBSInfoView.xib in Resources */,
 				787E00CE266DA85A008BBEC1 /* Assets.xcassets in Resources */,
 				7970D360266E5EEF004C4344 /* SBSPickerView.xib in Resources */,
+				787CD880266F77C50016D3EB /* SBGoldWithdrawConfirmVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,12 +604,14 @@
 				787244E8266F016F00B134C4 /* SBSGoldInfoVC.swift in Sources */,
 				787E0133266DDBC7008BBEC1 /* SBSCoordinator.swift in Sources */,
 				787E013C266DE43F008BBEC1 /* SBSOptional.swift in Sources */,
+				78724518266F63AF00B134C4 /* SBSGodWithdrawVC.swift in Sources */,
 				787E014A266DF596008BBEC1 /* SBSInt+Ext.swift in Sources */,
 				787244FD266F12B400B134C4 /* SBSGold.swift in Sources */,
 				787E011D266DA8C1008BBEC1 /* SBSViewController+Ext.swift in Sources */,
 				7970D350266E40CB004C4344 /* SBSDate+Ext.swift in Sources */,
 				78724514266F305E00B134C4 /* SBSShadowButton.swift in Sources */,
 				787E011B266DA8C1008BBEC1 /* SBSCollectionView+Ext.swift in Sources */,
+				787CD87F266F77C50016D3EB /* SBGoldWithdrawConfirmVC.swift in Sources */,
 				7872450E266F265800B134C4 /* SBSFormInfoCell.swift in Sources */,
 				787244F3266F0C4700B134C4 /* SBSGoldTableViewCell.swift in Sources */,
 				787E0129266DCC17008BBEC1 /* LocalizableText.swift in Sources */,

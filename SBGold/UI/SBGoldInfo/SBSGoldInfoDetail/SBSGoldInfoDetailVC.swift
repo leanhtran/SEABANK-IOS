@@ -12,6 +12,23 @@ class SBSGoldInfoDetailVC: SBSGoldBaseVC {
   @IBOutlet weak private var tbView: UITableView!
   @IBOutlet weak private var featureButtonHeight: NSLayoutConstraint!
   
+  enum FeatureButton: Int {
+    case withDraw
+    case buyGold
+    case viewContract
+    
+    var title: String {
+      switch self {
+      case .withDraw:
+        return Text.localizedString("GoldInfoDetail.WithDrawal")
+      case .buyGold:
+        return Text.localizedString("GoldInfoDetail.BuyGold")
+      case .viewContract:
+        return Text.localizedString("GoldInfoDetail.ViewContract")
+      }
+    }
+  }
+  
   struct DataSource {
     var title: String
     var value: String
@@ -45,15 +62,17 @@ class SBSGoldInfoDetailVC: SBSGoldBaseVC {
       datas.append(DataSource(title: Text.localizedString("GoldInfoDetail.TransactionPlace"), value: "PGD Vạn Xuân - 38 Yết Kiêu - Hoàn Kiếm"))
     }
     
-    var keys = ["GoldInfoDetail.BuyGold", "GoldInfoDetail.ViewContract"]
+    var features: [FeatureButton] = [.buyGold, .viewContract]
     if isPeriod {
-      keys.insert("GoldInfoDetail.WithDrawal", at: 0)
+      features.insert(.withDraw, at: 0)
     }
     for (index, button) in featureBtn.enumerated() {
-      if let key = keys.safeValue(at: index) {
-        button.setTitle(Text.localizedString(key), for: .normal)
+      if let feature = features.safeValue(at: index) {
+        button.setTitle(feature.title, for: .normal)
+        button.tag = feature.rawValue
       } else {
         button.isHidden = true
+        button.tag = 111
       }
     }
   }
@@ -61,6 +80,17 @@ class SBSGoldInfoDetailVC: SBSGoldBaseVC {
   override func setupView() {
     addNavigation(title: Text.localizedString("GoldInfoDetail.NaviTitle"))
     setupTbView()
+    addObservable(buttons: featureBtn)
+  }
+  
+  override func didTapButton(_ btn: UIButton) {
+    guard let feature = FeatureButton(rawValue: btn.tag) else { return }
+    switch feature {
+    case .withDraw:
+      SBSCoordinator.shared.moveTo(Route.goldWithdraw)
+    default:
+      break
+    }
   }
   
   private func setupTbView() {
