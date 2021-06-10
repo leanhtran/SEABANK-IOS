@@ -30,10 +30,15 @@ class SBSGodWithdrawVC: SBSGoldBaseVC {
   
   override func setupView() {
     addNavigation(title: Text.localizedString("GoldWithdraw.Register"))
+    addObservable(buttons: [nextBtn])
     setupMultiLanguage()
     setupCommon()
     setupPickerView()
     setupDatePicker()
+  }
+  
+  override func didTapButton(_ btn: UIButton) {
+    SBSCoordinator.shared.moveTo(Route.withdrawConfirm)
   }
   
   private func setupCommon() {
@@ -64,6 +69,7 @@ class SBSGodWithdrawVC: SBSGoldBaseVC {
     feeView.setTitle(Text.localizedString("GoldWithdraw.WithdrawFee"))
     feeInfoLb.text = Text.localizedString("GoldWithdraw.WithdrawInfo")
     noticeLb.text = Text.localizedString("GoldWithdraw.WithdrawNotice")
+    nextBtn.setTitle(Text.localizedString("Button.Continue"), for: .normal)
   }
 }
 

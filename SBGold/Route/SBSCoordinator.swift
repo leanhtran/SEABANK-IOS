@@ -14,6 +14,8 @@ enum Route {
   case goldInfoDetail
   case goldWithdraw
   case buyGoldOTP
+  case withdrawConfirm
+  case withdrawSuccess
 }
 
 class BaseCoordinator {
@@ -48,6 +50,10 @@ final class SBSCoordinator: BaseCoordinator {
       push(SBSGodWithdrawVC())
     case .buyGoldOTP:
       push(SBSVerifyOTPVC())
+    case .withdrawConfirm:
+      push(SBGoldWithdrawConfirmVC())
+    case .withdrawSuccess:
+      push(SBGoldWithdrawSuccessVC())
     }
   }
 }
