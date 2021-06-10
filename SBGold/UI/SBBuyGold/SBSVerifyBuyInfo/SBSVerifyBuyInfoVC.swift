@@ -53,7 +53,7 @@ class SBSVerifyBuyInfoVC: SBSGoldBaseVC {
   }
   
   override func didTapButton(_ btn: UIButton) {
-    // TODO next
+    SBSCoordinator.shared.moveTo(Route.buyGoldOTP)
   }
   
   private func setupMultiLanguage() {

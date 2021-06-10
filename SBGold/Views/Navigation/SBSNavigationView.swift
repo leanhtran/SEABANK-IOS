@@ -32,7 +32,10 @@ class SBSNavigationView: UIView {
       $0.font = UIFont.systemFont(ofSize: 16)
       $0.textColor = UIColor.white
       $0.textAlignment = .center
-      $0.frame = CGRect(x: curveX1, y: 20, width: scrW - 2 * curveX1, height: 30)
+      $0.frame = CGRect(x: (curveX2 + curveX1) / 2,
+                        y: 20,
+                        width: scrW - curveX2 - curveX1,
+                        height: 30)
     }
     
     Apply(backBtn) {

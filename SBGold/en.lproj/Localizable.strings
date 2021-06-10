@@ -67,6 +67,11 @@
 "BGVI.ReferUserInfo" = "Người giới thiệu";
 "BGVI.TransactionDate" = "Ngày giao dịch";
 
+// MARK: BuyGold OTP
+"BuyGoldOTP.NaviTitle" = "Xác thực giao dịch";
+"BuyGoldOTP.Notice" = "Quý khách vui lòng nhập mã OTP đã được gửi về số điện thoại đồng thời nhập mật khẩu đăng nhập để xác thực giao dịch.";
+"BuyGoldOTP.EnterPassword" = "Nhập mật khẩu";
+
 // MARK: GoldInfo
 "GoldInfo.NaviTitle" = "Thông tin vàng";
 "GoldInfo.Menu.All" = "Tất cả";
